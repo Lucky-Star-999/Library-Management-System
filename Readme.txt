@@ -1,0 +1,1 @@
+Toàn bộ project chính thức sẽ được đem qua file này nhe
