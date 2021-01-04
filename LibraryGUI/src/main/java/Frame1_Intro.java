@@ -7,6 +7,10 @@ import java.io.File;
 import java.io.IOException;
 import javax.imageio.ImageIO;
 import javax.swing.JPanel;
+import java.awt.Image;
+import java.awt.Toolkit;
+import javax.swing.ImageIcon;
+
 
 public class Frame1_Intro extends javax.swing.JFrame {
 
@@ -25,6 +29,20 @@ public class Frame1_Intro extends javax.swing.JFrame {
               throw new RuntimeException(e);
         }   
         initComponents();
+        
+        //Set image of button
+        String linkImageButton1 = "src/main/java/com/mycompany/librarygui/Library_Icons/icons8-manager.png";
+        Image im = Toolkit.getDefaultToolkit().createImage(linkImageButton1);
+        im = im.getScaledInstance(jLabel1.getWidth(), jLabel1.getHeight(), Image.SCALE_SMOOTH);
+        ImageIcon ii = new ImageIcon(im);
+        jLabel1.setIcon(ii);
+        
+        //Set image of button
+        String linkImageButton2 = "src/main/java/com/mycompany/librarygui/Library_Icons/icons8-student_male.png";
+        Image im1 = Toolkit.getDefaultToolkit().createImage(linkImageButton2);
+        im1 = im1.getScaledInstance(jLabel2.getWidth(), jLabel2.getHeight(), Image.SCALE_SMOOTH);
+        ImageIcon ii2 = new ImageIcon(im);
+        jLabel2.setIcon(ii2);
     }
 
     /**

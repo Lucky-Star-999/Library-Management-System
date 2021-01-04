@@ -64,7 +64,7 @@ public class Main {
         
         //Change the variable to test any frame
         JFrame frameTest = new JFrame();
-        frameTest = frame2;
+        frameTest = frame1;
         
         
         
