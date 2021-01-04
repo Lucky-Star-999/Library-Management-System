@@ -6,8 +6,6 @@ import java.awt.Image;
 import java.io.File;
 import java.io.IOException;
 import javax.imageio.ImageIO;
-import javax.swing.ImageIcon;
-import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class Frame1_Intro extends javax.swing.JFrame {
@@ -17,7 +15,7 @@ public class Frame1_Intro extends javax.swing.JFrame {
      */
     public Frame1_Intro() {
         try {
-            Image backgroundImage = ImageIO.read(new File("/Users/doquangminh/Desktop/Screen.png"));
+            Image backgroundImage = ImageIO.read(new File("src/main/java/avatar/screen.png"));
             setContentPane(new JPanel(new BorderLayout()) {
                 @Override public void paintComponent(Graphics g) {
                      g.drawImage(backgroundImage, 0, 0, null);
