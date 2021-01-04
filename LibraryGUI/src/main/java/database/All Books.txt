@@ -1,0 +1,99 @@
+001
+Product design and sustainability
+Science
+Jane Penty
+null
+null
+Yes
+null
+src/main/java/imageBook/001 - Product design and sustainability - Jane Penty.jpg
+src/main/java/pdfFiles/c4611_sample_explain.pdf
+src/main/java/audioFiles/BabyElephantWalk60.wav
+002
+The citizen's guide to climate success
+Science
+Mark Jaccard
+null
+null
+Yes
+null
+src/main/java/imageBook/002 - The citizen's guide to climate success - Mark Jaccard.jpg
+src/main/java/pdfFiles/pdf-sample.pdf
+src/main/java/audioFiles/CantinaBand60.wav
+003
+Rethinking business responsibility in a global context
+Science
+Bodo B. Schlegelmilch and Ilona Szochcs (Eds.)
+null
+null
+Yes
+null
+src/main/java/imageBook/003 - Rethinking business responsibility in a global context - Bodo B. Schlegelmilch and Ilona Szochcs (Eds.).jpg
+src/main/java/pdfFiles/sample.pdf
+src/main/java/audioFiles/Fanfare60.wav
+004
+The origins of radical environmental reforms
+Science
+Thomas K. Rudel
+null
+null
+Yes
+null
+src/main/java/imageBook/004 - The origins of radical environmental reforms - Thomas K. Rudel.jpg
+src/main/java/pdfFiles/Sample3.pdf
+src/main/java/audioFiles/gettysburg.wav
+005
+Solving the wicked problem
+Science
+Elina Narvanen et al (Eds.)
+null
+null
+Yes
+null
+src/main/java/imageBook/005 - Solving the wicked problem - Elina Narvanen et al (Eds.).jpg
+src/main/java/pdfFiles/sample-pdf-file.pdf
+src/main/java/audioFiles/ImperialMarch60.wav
+006
+Hyperbole And A Half
+Funny
+Alexandra Brosh
+null
+null
+Yes
+null
+src/main/java/imageBook/006 - Hyperbole And A Half - Alexandra Brosh.jpg
+src/main/java/pdfFiles/Test.pdf
+src/main/java/audioFiles/PinkPanther60.wav
+007
+Three Men in a Boat
+Funny
+Jerome K. Jerome
+null
+null
+Yes
+null
+src/main/java/imageBook/007 - Three Men in a Boat - Jerome K. Jerome.jpg
+src/main/java/pdfFiles/c4611_sample_explain.pdf
+src/main/java/audioFiles/preamble.wav
+008
+The Silent Patient
+Thriller
+Alex Michaelides
+null
+null
+Yes
+null
+src/main/java/imageBook/008 - The Silent Patient - Alex Michaelides.jpg
+src/main/java/pdfFiles/Sample3.pdf
+src/main/java/audioFiles/StarWars60.wav
+009
+Before I Go to Sleep
+Thriller
+S. J. Watson
+null
+null
+Yes
+null
+src/main/java/imageBook/009 - Before I Go to Sleep - S. J. Watson.jpg
+src/main/java/pdfFiles/Test.pdf
+src/main/java/audioFiles/BabyElephantWalk60.wav

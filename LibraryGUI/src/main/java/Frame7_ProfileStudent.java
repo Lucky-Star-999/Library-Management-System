@@ -64,7 +64,7 @@ public class Frame7_ProfileStudent extends javax.swing.JFrame {
         btnEdit = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        btnBorrowedBook = new javax.swing.JButton();
+        btnManage = new javax.swing.JButton();
         btnLogOut = new javax.swing.JButton();
         btnLibrary = new javax.swing.JButton();
         textFieldImage = new javax.swing.JLabel();
@@ -72,7 +72,7 @@ public class Frame7_ProfileStudent extends javax.swing.JFrame {
         textFieldPhone = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
         textFieldId = new javax.swing.JTextField();
-        btnDelete = new javax.swing.JButton();
+        btnLibrary1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -123,19 +123,19 @@ public class Frame7_ProfileStudent extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("Avenir Next", 1, 24)); // NOI18N
         jLabel4.setText("Phone:");
 
-        btnBorrowedBook.setFont(new java.awt.Font("Avenir Next", 1, 20)); // NOI18N
-        btnBorrowedBook.setText("Borrowed Books");
-        btnBorrowedBook.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnManage.setFont(new java.awt.Font("Avenir Next", 1, 20)); // NOI18N
+        btnManage.setText("Borrowed Books");
+        btnManage.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnBorrowedBookMouseEntered(evt);
+                btnManageMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnBorrowedBookMouseExited(evt);
+                btnManageMouseExited(evt);
             }
         });
-        btnBorrowedBook.addActionListener(new java.awt.event.ActionListener() {
+        btnManage.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnBorrowedBookActionPerformed(evt);
+                btnManageActionPerformed(evt);
             }
         });
 
@@ -206,19 +206,19 @@ public class Frame7_ProfileStudent extends javax.swing.JFrame {
             }
         });
 
-        btnDelete.setFont(new java.awt.Font("Avenir Next", 1, 20)); // NOI18N
-        btnDelete.setText("Delete Account");
-        btnDelete.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnLibrary1.setFont(new java.awt.Font("Avenir Next", 1, 20)); // NOI18N
+        btnLibrary1.setText("Delete Account");
+        btnLibrary1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnDeleteMouseEntered(evt);
+                btnLibrary1MouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnDeleteMouseExited(evt);
+                btnLibrary1MouseExited(evt);
             }
         });
-        btnDelete.addActionListener(new java.awt.event.ActionListener() {
+        btnLibrary1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnDeleteActionPerformed(evt);
+                btnLibrary1ActionPerformed(evt);
             }
         });
 
@@ -252,10 +252,10 @@ public class Frame7_ProfileStudent extends javax.swing.JFrame {
                         .addContainerGap(100, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(btnLibrary, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnBorrowedBook, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(btnManage, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(248, 248, 248)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(btnDelete, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
+                            .addComponent(btnLibrary1, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
                             .addComponent(btnLogOut, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addGap(100, 100, 100))
         );
@@ -283,7 +283,7 @@ public class Frame7_ProfileStudent extends javax.swing.JFrame {
                             .addComponent(jLabel4)
                             .addComponent(textFieldPhone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(108, 108, 108)
-                        .addComponent(btnDelete, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnLibrary1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(btnLogOut, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -293,7 +293,7 @@ public class Frame7_ProfileStudent extends javax.swing.JFrame {
                         .addGap(69, 69, 69)
                         .addComponent(btnLibrary, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btnBorrowedBook, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(btnManage, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(50, 50, 50))
         );
 
@@ -363,17 +363,17 @@ public class Frame7_ProfileStudent extends javax.swing.JFrame {
         btnLibrary.setForeground(new Color(0, 0, 0));
     }//GEN-LAST:event_btnLibraryMouseExited
 
-    private void btnBorrowedBookMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBorrowedBookMouseEntered
+    private void btnManageMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnManageMouseEntered
         // TODO add your handling code here:
-        btnBorrowedBook.setBackground(new Color(20, 142, 255));
-        btnBorrowedBook.setForeground(new Color(255, 255, 255));
-    }//GEN-LAST:event_btnBorrowedBookMouseEntered
+        btnManage.setBackground(new Color(20, 142, 255));
+        btnManage.setForeground(new Color(255, 255, 255));
+    }//GEN-LAST:event_btnManageMouseEntered
 
-    private void btnBorrowedBookMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBorrowedBookMouseExited
+    private void btnManageMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnManageMouseExited
         // TODO add your handling code here:
-        btnBorrowedBook.setBackground(new Color(255, 255, 255));
-        btnBorrowedBook.setForeground(new Color(0, 0, 0));
-    }//GEN-LAST:event_btnBorrowedBookMouseExited
+        btnManage.setBackground(new Color(255, 255, 255));
+        btnManage.setForeground(new Color(0, 0, 0));
+    }//GEN-LAST:event_btnManageMouseExited
 
     private void btnLogOutMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnLogOutMouseEntered
         // TODO add your handling code here:
@@ -391,12 +391,12 @@ public class Frame7_ProfileStudent extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_textFieldIdActionPerformed
 
-    private void btnBorrowedBookActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBorrowedBookActionPerformed
+    private void btnManageActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnManageActionPerformed
         // TODO add your handling code here:
         this.dispose();
         Frame13_SeeBorrowedBooks frame13 = new Frame13_SeeBorrowedBooks();
         frame13.setVisible(true);
-    }//GEN-LAST:event_btnBorrowedBookActionPerformed
+    }//GEN-LAST:event_btnManageActionPerformed
 
     private void btnLibraryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLibraryActionPerformed
         // TODO add your handling code here:
@@ -419,15 +419,15 @@ public class Frame7_ProfileStudent extends javax.swing.JFrame {
         frame15.setVisible(true);        
     }//GEN-LAST:event_btnEditActionPerformed
 
-    private void btnDeleteMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDeleteMouseEntered
+    private void btnLibrary1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnLibrary1MouseEntered
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnDeleteMouseEntered
+    }//GEN-LAST:event_btnLibrary1MouseEntered
 
-    private void btnDeleteMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDeleteMouseExited
+    private void btnLibrary1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnLibrary1MouseExited
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnDeleteMouseExited
+    }//GEN-LAST:event_btnLibrary1MouseExited
 
-    private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
+    private void btnLibrary1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLibrary1ActionPerformed
         // TODO add your handling code here:
         String username = ManageData.getManageData().getWho_is_using_this_program();
         //ManageData.getManageData().allStudent.remove(username);
@@ -446,7 +446,7 @@ public class Frame7_ProfileStudent extends javax.swing.JFrame {
         /*this.dispose();
         Frame3_LoginStudent frame3 = new Frame3_LoginStudent();
         frame3.setVisible(true);*/
-    }//GEN-LAST:event_btnDeleteActionPerformed
+    }//GEN-LAST:event_btnLibrary1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -484,11 +484,11 @@ public class Frame7_ProfileStudent extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnBorrowedBook;
-    private javax.swing.JButton btnDelete;
     private javax.swing.JButton btnEdit;
     private javax.swing.JButton btnLibrary;
+    private javax.swing.JButton btnLibrary1;
     private javax.swing.JButton btnLogOut;
+    private javax.swing.JButton btnManage;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

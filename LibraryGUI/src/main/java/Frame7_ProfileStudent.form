@@ -103,11 +103,11 @@
                               <EmptySpace pref="100" max="32767" attributes="0"/>
                               <Group type="103" groupAlignment="1" attributes="0">
                                   <Component id="btnLibrary" min="-2" pref="200" max="-2" attributes="0"/>
-                                  <Component id="btnBorrowedBook" min="-2" pref="200" max="-2" attributes="0"/>
+                                  <Component id="btnManage" min="-2" pref="200" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="248" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="btnDelete" pref="200" max="32767" attributes="0"/>
+                                  <Component id="btnLibrary1" pref="200" max="32767" attributes="0"/>
                                   <Component id="btnLogOut" max="32767" attributes="0"/>
                               </Group>
                           </Group>
@@ -144,7 +144,7 @@
                                   <Component id="textFieldPhone" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="108" max="-2" attributes="0"/>
-                              <Component id="btnDelete" min="-2" pref="40" max="-2" attributes="0"/>
+                              <Component id="btnLibrary1" min="-2" pref="40" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="btnLogOut" min="-2" pref="40" max="-2" attributes="0"/>
                           </Group>
@@ -155,7 +155,7 @@
                               <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
                               <Component id="btnLibrary" min="-2" pref="40" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="btnBorrowedBook" min="-2" pref="40" max="-2" attributes="0"/>
+                              <Component id="btnManage" min="-2" pref="40" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
@@ -233,7 +233,7 @@
                 <Property name="text" type="java.lang.String" value="Phone:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JButton" name="btnBorrowedBook">
+            <Component class="javax.swing.JButton" name="btnManage">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Avenir Next" size="20" style="1"/>
@@ -241,9 +241,9 @@
                 <Property name="text" type="java.lang.String" value="Borrowed Books"/>
               </Properties>
               <Events>
-                <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnBorrowedBookMouseEntered"/>
-                <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnBorrowedBookMouseExited"/>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBorrowedBookActionPerformed"/>
+                <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnManageMouseEntered"/>
+                <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnManageMouseExited"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnManageActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JButton" name="btnLogOut">
@@ -334,7 +334,7 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="textFieldIdActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JButton" name="btnDelete">
+            <Component class="javax.swing.JButton" name="btnLibrary1">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Avenir Next" size="20" style="1"/>
@@ -342,9 +342,9 @@
                 <Property name="text" type="java.lang.String" value="Delete Account"/>
               </Properties>
               <Events>
-                <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnDeleteMouseEntered"/>
-                <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnDeleteMouseExited"/>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDeleteActionPerformed"/>
+                <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnLibrary1MouseEntered"/>
+                <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnLibrary1MouseExited"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnLibrary1ActionPerformed"/>
               </Events>
             </Component>
           </SubComponents>

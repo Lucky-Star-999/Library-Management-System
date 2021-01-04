@@ -37,8 +37,8 @@ public class Frame5_RegisterStudent extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         textFieldFullName = new javax.swing.JTextField();
-        btnSignUp = new javax.swing.JButton();
-        btnCancel = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
         jSeparator1 = new javax.swing.JSeparator();
         jLabel7 = new javax.swing.JLabel();
         textFieldUsername = new javax.swing.JTextField();
@@ -52,7 +52,7 @@ public class Frame5_RegisterStudent extends javax.swing.JFrame {
         jSeparator9 = new javax.swing.JSeparator();
         passwordField = new javax.swing.JPasswordField();
         jLabel3 = new javax.swing.JLabel();
-        btnLogin = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
         jLabel11 = new javax.swing.JLabel();
         btnBack2 = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
@@ -91,37 +91,37 @@ public class Frame5_RegisterStudent extends javax.swing.JFrame {
             }
         });
 
-        btnSignUp.setBackground(new java.awt.Color(0, 122, 255));
-        btnSignUp.setFont(new java.awt.Font("Avenir Next", 1, 18)); // NOI18N
-        btnSignUp.setForeground(new java.awt.Color(255, 255, 255));
-        btnSignUp.setText("Sign Up");
-        btnSignUp.addMouseListener(new java.awt.event.MouseAdapter() {
+        jButton2.setBackground(new java.awt.Color(0, 122, 255));
+        jButton2.setFont(new java.awt.Font("Avenir Next", 1, 18)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
+        jButton2.setText("Sign Up");
+        jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnSignUpMouseEntered(evt);
+                jButton2MouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnSignUpMouseExited(evt);
+                jButton2MouseExited(evt);
             }
         });
-        btnSignUp.addActionListener(new java.awt.event.ActionListener() {
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSignUpActionPerformed(evt);
+                jButton2ActionPerformed(evt);
             }
         });
 
-        btnCancel.setFont(new java.awt.Font("Avenir Next", 1, 18)); // NOI18N
-        btnCancel.setText("Cancel");
-        btnCancel.addMouseListener(new java.awt.event.MouseAdapter() {
+        jButton3.setFont(new java.awt.Font("Avenir Next", 1, 18)); // NOI18N
+        jButton3.setText("Cancel");
+        jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnCancelMouseEntered(evt);
+                jButton3MouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnCancelMouseExited(evt);
+                jButton3MouseExited(evt);
             }
         });
-        btnCancel.addActionListener(new java.awt.event.ActionListener() {
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCancelActionPerformed(evt);
+                jButton3ActionPerformed(evt);
             }
         });
 
@@ -187,23 +187,23 @@ public class Frame5_RegisterStudent extends javax.swing.JFrame {
         jLabel3.setForeground(new java.awt.Color(102, 102, 102));
         jLabel3.setText("ALREADY HAVE AN ACCOUNT?");
 
-        btnLogin.setFont(new java.awt.Font("Avenir Next", 1, 20)); // NOI18N
-        btnLogin.setForeground(new java.awt.Color(64, 156, 255));
-        btnLogin.setText("LOG IN");
-        btnLogin.setBorder(null);
-        btnLogin.setBorderPainted(false);
-        btnLogin.setContentAreaFilled(false);
-        btnLogin.addMouseListener(new java.awt.event.MouseAdapter() {
+        jButton1.setFont(new java.awt.Font("Avenir Next", 1, 20)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(64, 156, 255));
+        jButton1.setText("LOG IN");
+        jButton1.setBorder(null);
+        jButton1.setBorderPainted(false);
+        jButton1.setContentAreaFilled(false);
+        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnLoginMouseEntered(evt);
+                jButton1MouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnLoginMouseExited(evt);
+                jButton1MouseExited(evt);
             }
         });
-        btnLogin.addActionListener(new java.awt.event.ActionListener() {
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnLoginActionPerformed(evt);
+                jButton1ActionPerformed(evt);
             }
         });
 
@@ -259,9 +259,9 @@ public class Frame5_RegisterStudent extends javax.swing.JFrame {
                             .addComponent(jSeparator1)
                             .addComponent(textFieldUsername, javax.swing.GroupLayout.DEFAULT_SIZE, 344, Short.MAX_VALUE)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bgLayout.createSequentialGroup()
-                                .addComponent(btnCancel, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(btnSignUp, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(jSeparator6)
                             .addComponent(textFieldEmail)
                             .addComponent(jSeparator8)
@@ -280,7 +280,7 @@ public class Frame5_RegisterStudent extends javax.swing.JFrame {
                                 .addGap(0, 85, Short.MAX_VALUE)
                                 .addComponent(jLabel3)
                                 .addGap(6, 6, 6)
-                                .addComponent(btnLogin)
+                                .addComponent(jButton1)
                                 .addGap(84, 84, 84)))))
                 .addGap(100, 100, 100))
         );
@@ -294,7 +294,7 @@ public class Frame5_RegisterStudent extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
-                    .addComponent(btnLogin))
+                    .addComponent(jButton1))
                 .addGap(36, 36, 36)
                 .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(textFieldFullName, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -334,8 +334,8 @@ public class Frame5_RegisterStudent extends javax.swing.JFrame {
                 .addComponent(jSeparator9, javax.swing.GroupLayout.PREFERRED_SIZE, 6, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(30, 30, 30)
                 .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnSignUp, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnCancel, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(50, 50, 50))
         );
 
@@ -375,7 +375,7 @@ public class Frame5_RegisterStudent extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_textFieldFullNameActionPerformed
 
-    private void btnSignUpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSignUpActionPerformed
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
         String username = textFieldUsername.getText();
         
@@ -412,14 +412,14 @@ public class Frame5_RegisterStudent extends javax.swing.JFrame {
         else{
             JOptionPane.showMessageDialog(null, "Please fill in all information!");
         }
-    }//GEN-LAST:event_btnSignUpActionPerformed
+    }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void btnCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelActionPerformed
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
         this.dispose();
         Frame3_LoginStudent frame3 = new Frame3_LoginStudent();
         frame3.setVisible(true);
-    }//GEN-LAST:event_btnCancelActionPerformed
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     private void textFieldUsernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textFieldUsernameActionPerformed
         // TODO add your handling code here:
@@ -433,44 +433,44 @@ public class Frame5_RegisterStudent extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_textFieldPhoneActionPerformed
 
-    private void btnSignUpMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSignUpMouseEntered
+    private void jButton2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseEntered
         // TODO add your handling code here:
-        btnSignUp.setBackground(new Color(0, 64, 221));
-    }//GEN-LAST:event_btnSignUpMouseEntered
+        jButton2.setBackground(new Color(0, 64, 221));
+    }//GEN-LAST:event_jButton2MouseEntered
 
-    private void btnSignUpMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSignUpMouseExited
+    private void jButton2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseExited
         // TODO add your handling code here:
-        btnSignUp.setBackground(new Color(0, 122, 255));
-    }//GEN-LAST:event_btnSignUpMouseExited
+        jButton2.setBackground(new Color(0, 122, 255));
+    }//GEN-LAST:event_jButton2MouseExited
 
-    private void btnCancelMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCancelMouseEntered
+    private void jButton3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseEntered
         // TODO add your handling code here:
-        btnCancel.setBackground(new Color(20, 142, 255));
-        btnCancel.setForeground(new Color(255, 255, 255));
-    }//GEN-LAST:event_btnCancelMouseEntered
+        jButton3.setBackground(new Color(20, 142, 255));
+        jButton3.setForeground(new Color(255, 255, 255));
+    }//GEN-LAST:event_jButton3MouseEntered
 
-    private void btnCancelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCancelMouseExited
+    private void jButton3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseExited
         // TODO add your handling code here:
-        btnCancel.setBackground(new Color(255, 255, 255));
-        btnCancel.setForeground(new Color(0, 0, 0));
-    }//GEN-LAST:event_btnCancelMouseExited
+        jButton3.setBackground(new Color(255, 255, 255));
+        jButton3.setForeground(new Color(0, 0, 0));
+    }//GEN-LAST:event_jButton3MouseExited
 
-    private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         this.dispose();
         Frame2_LoginManager frame2 = new Frame2_LoginManager();
         frame2.setVisible(true);
-    }//GEN-LAST:event_btnLoginActionPerformed
+    }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void btnLoginMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnLoginMouseEntered
+    private void jButton1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseEntered
         // TODO add your handling code here:
-        btnLogin.setForeground(new Color(0, 122, 255));
-    }//GEN-LAST:event_btnLoginMouseEntered
+        jButton1.setForeground(new Color(0, 122, 255));
+    }//GEN-LAST:event_jButton1MouseEntered
 
-    private void btnLoginMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnLoginMouseExited
+    private void jButton1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseExited
         // TODO add your handling code here:
-        btnLogin.setForeground(new Color(64, 156, 255));
-    }//GEN-LAST:event_btnLoginMouseExited
+        jButton1.setForeground(new Color(64, 156, 255));
+    }//GEN-LAST:event_jButton1MouseExited
 
     private void textFieldIDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textFieldIDActionPerformed
         // TODO add your handling code here:
@@ -514,9 +514,9 @@ public class Frame5_RegisterStudent extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel bg;
     private javax.swing.JButton btnBack2;
-    private javax.swing.JButton btnCancel;
-    private javax.swing.JButton btnLogin;
-    private javax.swing.JButton btnSignUp;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
