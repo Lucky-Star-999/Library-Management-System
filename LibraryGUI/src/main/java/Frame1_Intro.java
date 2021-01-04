@@ -33,16 +33,16 @@ public class Frame1_Intro extends javax.swing.JFrame {
         //Set image of button
         String linkImageButton1 = "src/main/java/com/mycompany/librarygui/Library_Icons/icons8-manager.png";
         Image im = Toolkit.getDefaultToolkit().createImage(linkImageButton1);
-        im = im.getScaledInstance(jLabel1.getWidth(), jLabel1.getHeight(), Image.SCALE_SMOOTH);
+        im = im.getScaledInstance(btnManager.getWidth(), btnManager.getHeight(), Image.SCALE_SMOOTH);
         ImageIcon ii = new ImageIcon(im);
-        jLabel1.setIcon(ii);
+        btnManager.setIcon(ii);
         
         //Set image of button
         String linkImageButton2 = "src/main/java/com/mycompany/librarygui/Library_Icons/icons8-student_male.png";
         Image im1 = Toolkit.getDefaultToolkit().createImage(linkImageButton2);
-        im1 = im1.getScaledInstance(jLabel2.getWidth(), jLabel2.getHeight(), Image.SCALE_SMOOTH);
-        ImageIcon ii2 = new ImageIcon(im);
-        jLabel2.setIcon(ii2);
+        im1 = im1.getScaledInstance(btnStudent.getWidth(), btnStudent.getHeight(), Image.SCALE_SMOOTH);
+        ImageIcon ii2 = new ImageIcon(im1);
+        btnStudent.setIcon(ii2);
     }
 
     /**
