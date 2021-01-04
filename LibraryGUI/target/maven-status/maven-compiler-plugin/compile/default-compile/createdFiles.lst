@@ -45,8 +45,8 @@ Frame3_LoginStudent$4.class
 Frame5_RegisterStudent$6.class
 Frame6_ProfileManager$10.class
 Frame14_Book_Student$10.class
-Frame14_Book_Student$4.class
 Frame20_AddBook_1$2.class
+Frame14_Book_Student$4.class
 Frame20_AddBook$10.class
 Frame10_ManageStudents_General$10.class
 Frame20_AddBook_1$8.class
@@ -57,8 +57,8 @@ Frame9_PasswordChange$3.class
 Frame16_Book_Manager$12.class
 Frame3_LoginStudent$5.class
 Frame15_EditProfileStudent.class
-Frame15_EditProfileStudent$11.class
 Frame17_PasswordChangeStudent.class
+Frame15_EditProfileStudent$11.class
 Frame20_AddBook_1$3.class
 Frame9_PasswordChange$5.class
 Frame15_EditProfileStudent$13.class
@@ -70,8 +70,8 @@ Frame20_AddBook_1$13.class
 Frame20_AddBook_1.class
 Frame21_StudentBorrowBook$3.class
 Frame18_ForgotPassword$6.class
-Frame16_Book_Manager$13.class
 Frame2_LoginManager$1.class
+Frame16_Book_Manager$13.class
 Frame14_Book_Student$8.class
 Frame15_EditProfileStudent$4.class
 Frame17_PasswordChangeStudent$6.class
@@ -103,8 +103,8 @@ Frame2_LoginManager$3.class
 Frame6_ProfileManager$12.class
 Frame18_ForgotPassword$4.class
 Frame15_EditProfileStudent$2.class
-Frame11_ManageStudents_Detail$5.class
 Frame17_PasswordChangeStudent$4.class
+Frame11_ManageStudents_Detail$5.class
 Frame8_EditProfile$11.class
 Frame20_AddBook$23.class
 Frame2_LoginManager$11.class
@@ -124,8 +124,8 @@ Frame5_RegisterStudent$11.class
 Frame6_ProfileManager.class
 Frame8_EditProfile$10.class
 Frame7_ProfileStudent$15.class
-Frame2_LoginManager$15.class
 Frame5_RegisterStudent.class
+Frame2_LoginManager$15.class
 Frame15_EditProfileStudent$9.class
 Frame18_ForgotPassword$8.class
 Frame20_AddBook$22.class
@@ -224,8 +224,8 @@ Frame8_EditProfile$7.class
 Frame16_Book_Manager$8.class
 Frame5_RegisterStudent$7.class
 Frame1_Intro$5.class
-Frame14_Book_Student$3.class
 Frame7_ProfileStudent$3.class
+Frame14_Book_Student$3.class
 Frame12_ChangeFine$3.class
 Frame8_EditProfile$5.class
 Frame7_ProfileStudent$5.class
@@ -260,8 +260,8 @@ Frame19_ForgotPassword_Student$3.class
 Frame10_ManageStudents_General$5.class
 Frame6_ProfileManager$4.class
 Frame6_ProfileManager$3.class
-Frame19_ForgotPassword_Student$8.class
 Frame4_RegisterManager.class
+Frame19_ForgotPassword_Student$8.class
 Frame20_AddBook$16.class
 Frame19_ForgotPassword_Student$2.class
 Frame10_ManageStudents_General$6.class

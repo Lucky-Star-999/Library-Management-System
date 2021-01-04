@@ -9,6 +9,7 @@ import javax.imageio.ImageIO;
 import javax.swing.JPanel;
 import java.awt.Image;
 import java.awt.Toolkit;
+import javax.swing.Icon;
 import javax.swing.ImageIcon;
 
 
@@ -30,19 +31,26 @@ public class Frame1_Intro extends javax.swing.JFrame {
         }   
         initComponents();
         
-        //Set image of button
-        String linkImageButton1 = "src/main/java/com/mycompany/librarygui/Library_Icons/icons8-manager.png";
-        Image im = Toolkit.getDefaultToolkit().createImage(linkImageButton1);
-        im = im.getScaledInstance(btnManager.getWidth(), btnManager.getHeight(), Image.SCALE_SMOOTH);
-        ImageIcon ii = new ImageIcon(im);
+        ImageIcon ii = new ImageIcon("src/main/java/com/mycompany/librarygui/Library_Icons/icons8-manager.png");
         btnManager.setIcon(ii);
         
-        //Set image of button
-        String linkImageButton2 = "src/main/java/com/mycompany/librarygui/Library_Icons/icons8-student_male.png";
-        Image im1 = Toolkit.getDefaultToolkit().createImage(linkImageButton2);
-        im1 = im1.getScaledInstance(btnStudent.getWidth(), btnStudent.getHeight(), Image.SCALE_SMOOTH);
-        ImageIcon ii2 = new ImageIcon(im1);
+        ImageIcon ii2 = new ImageIcon("src/main/java/com/mycompany/librarygui/Library_Icons/icons8-student_male.png");
         btnStudent.setIcon(ii2);
+        
+        
+//        //Set image of button
+//        String linkImageButton1 = "src/main/java/com/mycompany/librarygui/Library_Icons/icons8-manager.png";
+//        Image im = Toolkit.getDefaultToolkit().createImage(linkImageButton1);
+//        im = im.getScaledInstance(btnManager.getWidth(), btnManager.getHeight(), Image.SCALE_SMOOTH);
+//        ImageIcon ii = new ImageIcon(im);
+//        btnManager.setIcon(ii);
+//        
+//        //Set image of button
+//        String linkImageButton2 = "src/main/java/com/mycompany/librarygui/Library_Icons/icons8-student_male.png";
+//        Image im1 = Toolkit.getDefaultToolkit().createImage(linkImageButton2);
+//        im1 = im1.getScaledInstance(btnStudent.getWidth(), btnStudent.getHeight(), Image.SCALE_SMOOTH);
+//        ImageIcon ii2 = new ImageIcon(im1);
+//        btnStudent.setIcon(ii2);
     }
 
     /**
@@ -92,7 +100,6 @@ public class Frame1_Intro extends javax.swing.JFrame {
         );
 
         btnManager.setFont(new java.awt.Font("Avenir Next", 1, 24)); // NOI18N
-        btnManager.setIcon(new javax.swing.ImageIcon("/Users/doquangminh/NetBeansProjects/LibraryGUI/src/main/java/com/mycompany/librarygui/Library_Icons/icons8-manager.png")); // NOI18N
         btnManager.setText("Manager");
         btnManager.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -109,7 +116,6 @@ public class Frame1_Intro extends javax.swing.JFrame {
         });
 
         btnStudent.setFont(new java.awt.Font("Avenir Next", 1, 24)); // NOI18N
-        btnStudent.setIcon(new javax.swing.ImageIcon("/Users/doquangminh/NetBeansProjects/LibraryGUI/src/main/java/com/mycompany/librarygui/Library_Icons/icons8-student_male.png")); // NOI18N
         btnStudent.setText("Student");
         btnStudent.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -131,24 +137,24 @@ public class Frame1_Intro extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(240, 240, 240)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btnManager)
                 .addGap(18, 18, 18)
-                .addComponent(btnStudent)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(btnStudent, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(235, 235, 235))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(34, 34, 34)
+                .addGap(50, 50, 50)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(48, 48, 48)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnManager, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnStudent, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(100, Short.MAX_VALUE))
+                .addGap(28, 28, 28)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(btnManager, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+                    .addComponent(btnStudent, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(117, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -165,7 +171,7 @@ public class Frame1_Intro extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(150, 150, 150)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(150, Short.MAX_VALUE))
+                .addContainerGap(147, Short.MAX_VALUE))
         );
 
         pack();
