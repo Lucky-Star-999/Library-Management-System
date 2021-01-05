@@ -16,6 +16,12 @@ Do Quang Minh
 dqminh@gmail.com
 0908209847
 src/main/java/avatar/Dark-2.jpg
+linh
+123456
+Nguyen Hoang Linh
+linh1305@gmail.com
+0933348791
+src/main/java/avatar/Rocket.jpg
 aaaaaaaa
 111111
 aaaaa
