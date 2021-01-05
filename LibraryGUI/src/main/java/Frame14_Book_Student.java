@@ -10,6 +10,7 @@ import java.awt.Toolkit;
 import java.io.File;
 import javax.swing.ImageIcon;
 import java.util.HashMap;
+import javax.swing.JOptionPane;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -427,7 +428,14 @@ public class Frame14_Book_Student extends javax.swing.JFrame {
             //ManageData.getManageData().setBook_choosen(id);
             String link = ManageData.getManageData().allBook.get(id).getLinkPdf();
             File file = new File(link);
-            ManageData.getManageData().openPdfFile(file.getAbsolutePath());
+            
+            if(file.getName().equals("pdfFiles")){
+                JOptionPane.showMessageDialog(null, "There is not any files!");
+            }
+            else{
+                ManageData.getManageData().openPdfFile(file.getAbsolutePath());
+            }
+            //ManageData.getManageData().openPdfFile(file.getAbsolutePath());
 
         }
     }//GEN-LAST:event_btnUpcomingActionPerformed
@@ -517,7 +525,14 @@ public class Frame14_Book_Student extends javax.swing.JFrame {
             //ManageData.getManageData().setBook_choosen(id);
             String link = ManageData.getManageData().allBook.get(id).getLinkAudio();
             File file = new File(link);
-            ManageData.getManageData().openPdfFile(file.getAbsolutePath());
+            
+            if(file.getName().equals("audioFiles")){
+                JOptionPane.showMessageDialog(null, "There is not any files!");
+            }
+            else{
+                ManageData.getManageData().openPdfFile(file.getAbsolutePath());
+            }
+            //ManageData.getManageData().openPdfFile(file.getAbsolutePath());
 
         }
     }//GEN-LAST:event_btnUpcoming1ActionPerformed
