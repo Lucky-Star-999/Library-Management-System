@@ -61,17 +61,17 @@ public class Frame20_AddBook extends javax.swing.JFrame {
         textFieldAuthor = new javax.swing.JTextField();
         textFieldAudio = new javax.swing.JTextField();
         textFieldCategory = new javax.swing.JTextField();
-        btnAddBook1 = new javax.swing.JButton();
-        btnAddBook2 = new javax.swing.JButton();
+        btnAddCover = new javax.swing.JButton();
+        btnDeleteCover = new javax.swing.JButton();
         textFieldImage = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         textFieldPdf = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
         textFieldId = new javax.swing.JTextField();
-        btnAddBook3 = new javax.swing.JButton();
-        btnAddBook4 = new javax.swing.JButton();
-        btnAddBook5 = new javax.swing.JButton();
-        btnAddBook6 = new javax.swing.JButton();
+        btnImportPDF = new javax.swing.JButton();
+        btnDeletePDF = new javax.swing.JButton();
+        btnDeleteAudio = new javax.swing.JButton();
+        btnImportAudio = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -160,35 +160,35 @@ public class Frame20_AddBook extends javax.swing.JFrame {
             }
         });
 
-        btnAddBook1.setFont(new java.awt.Font("Avenir Next", 1, 16)); // NOI18N
-        btnAddBook1.setText("Add Cover");
-        btnAddBook1.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnAddCover.setFont(new java.awt.Font("Avenir Next", 1, 16)); // NOI18N
+        btnAddCover.setText("Add Cover");
+        btnAddCover.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnAddBook1MouseEntered(evt);
+                btnAddCoverMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnAddBook1MouseExited(evt);
+                btnAddCoverMouseExited(evt);
             }
         });
-        btnAddBook1.addActionListener(new java.awt.event.ActionListener() {
+        btnAddCover.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAddBook1ActionPerformed(evt);
+                btnAddCoverActionPerformed(evt);
             }
         });
 
-        btnAddBook2.setFont(new java.awt.Font("Avenir Next", 1, 16)); // NOI18N
-        btnAddBook2.setText("Delete");
-        btnAddBook2.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnDeleteCover.setFont(new java.awt.Font("Avenir Next", 1, 16)); // NOI18N
+        btnDeleteCover.setText("Delete");
+        btnDeleteCover.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnAddBook2MouseEntered(evt);
+                btnDeleteCoverMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnAddBook2MouseExited(evt);
+                btnDeleteCoverMouseExited(evt);
             }
         });
-        btnAddBook2.addActionListener(new java.awt.event.ActionListener() {
+        btnDeleteCover.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAddBook2ActionPerformed(evt);
+                btnDeleteCoverActionPerformed(evt);
             }
         });
 
@@ -215,67 +215,67 @@ public class Frame20_AddBook extends javax.swing.JFrame {
             }
         });
 
-        btnAddBook3.setFont(new java.awt.Font("Avenir Next", 1, 16)); // NOI18N
-        btnAddBook3.setText("Import");
-        btnAddBook3.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnImportPDF.setFont(new java.awt.Font("Avenir Next", 1, 16)); // NOI18N
+        btnImportPDF.setText("Import");
+        btnImportPDF.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnAddBook3MouseEntered(evt);
+                btnImportPDFMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnAddBook3MouseExited(evt);
+                btnImportPDFMouseExited(evt);
             }
         });
-        btnAddBook3.addActionListener(new java.awt.event.ActionListener() {
+        btnImportPDF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAddBook3ActionPerformed(evt);
+                btnImportPDFActionPerformed(evt);
             }
         });
 
-        btnAddBook4.setFont(new java.awt.Font("Avenir Next", 1, 16)); // NOI18N
-        btnAddBook4.setText("Delete");
-        btnAddBook4.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnDeletePDF.setFont(new java.awt.Font("Avenir Next", 1, 16)); // NOI18N
+        btnDeletePDF.setText("Delete");
+        btnDeletePDF.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnAddBook4MouseEntered(evt);
+                btnDeletePDFMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnAddBook4MouseExited(evt);
+                btnDeletePDFMouseExited(evt);
             }
         });
-        btnAddBook4.addActionListener(new java.awt.event.ActionListener() {
+        btnDeletePDF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAddBook4ActionPerformed(evt);
+                btnDeletePDFActionPerformed(evt);
             }
         });
 
-        btnAddBook5.setFont(new java.awt.Font("Avenir Next", 1, 16)); // NOI18N
-        btnAddBook5.setText("Delete");
-        btnAddBook5.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnDeleteAudio.setFont(new java.awt.Font("Avenir Next", 1, 16)); // NOI18N
+        btnDeleteAudio.setText("Delete");
+        btnDeleteAudio.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnAddBook5MouseEntered(evt);
+                btnDeleteAudioMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnAddBook5MouseExited(evt);
+                btnDeleteAudioMouseExited(evt);
             }
         });
-        btnAddBook5.addActionListener(new java.awt.event.ActionListener() {
+        btnDeleteAudio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAddBook5ActionPerformed(evt);
+                btnDeleteAudioActionPerformed(evt);
             }
         });
 
-        btnAddBook6.setFont(new java.awt.Font("Avenir Next", 1, 16)); // NOI18N
-        btnAddBook6.setText("Import");
-        btnAddBook6.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnImportAudio.setFont(new java.awt.Font("Avenir Next", 1, 16)); // NOI18N
+        btnImportAudio.setText("Import");
+        btnImportAudio.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnAddBook6MouseEntered(evt);
+                btnImportAudioMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnAddBook6MouseExited(evt);
+                btnImportAudioMouseExited(evt);
             }
         });
-        btnAddBook6.addActionListener(new java.awt.event.ActionListener() {
+        btnImportAudio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAddBook6ActionPerformed(evt);
+                btnImportAudioActionPerformed(evt);
             }
         });
 
@@ -287,61 +287,56 @@ public class Frame20_AddBook extends javax.swing.JFrame {
                 .addGap(100, 100, 100)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(49, 49, 49))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addGap(59, 59, 59)
-                                .addComponent(btnAddBook)
-                                .addGap(63, 63, 63)
-                                .addComponent(btnCancel, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(textFieldTitle, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 296, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(textFieldId, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 295, Short.MAX_VALUE)
+                                        .addComponent(textFieldCategory, javax.swing.GroupLayout.Alignment.TRAILING))))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel2)
-                                            .addComponent(jLabel7))
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                                .addGap(53, 53, 53)
-                                                .addComponent(textFieldAudio))
-                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                .addComponent(textFieldId, javax.swing.GroupLayout.PREFERRED_SIZE, 345, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                        .addGroup(jPanel1Layout.createSequentialGroup()
-                                            .addComponent(jLabel3)
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addComponent(textFieldCategory, javax.swing.GroupLayout.PREFERRED_SIZE, 345, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                                            .addComponent(jLabel5)
-                                            .addGap(94, 94, 94)
-                                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(textFieldAuthor, javax.swing.GroupLayout.PREFERRED_SIZE, 345, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addComponent(textFieldTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 345, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addComponent(textFieldPdf, javax.swing.GroupLayout.PREFERRED_SIZE, 345, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                                .addGap(0, 5, Short.MAX_VALUE)))
-                        .addGap(102, 102, 102)
+                                        .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, 99, Short.MAX_VALUE)
+                                        .addGap(41, 41, 41))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 99, Short.MAX_VALUE)
+                                            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(btnAddBook)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(btnCancel, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(textFieldPdf)
+                                    .addComponent(textFieldAudio)
+                                    .addComponent(textFieldAuthor, javax.swing.GroupLayout.PREFERRED_SIZE, 296, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGap(50, 50, 50)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(textFieldImage, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(textFieldImage, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                 .addGroup(jPanel1Layout.createSequentialGroup()
-                                    .addComponent(btnAddBook3, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnImportPDF, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(btnAddBook4, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(btnDeletePDF, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGroup(jPanel1Layout.createSequentialGroup()
-                                    .addComponent(btnAddBook1, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnAddCover, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(btnAddBook2, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(btnDeleteCover, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                    .addComponent(btnAddBook6, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnImportAudio, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(btnAddBook5, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addGap(125, 125, 125))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGap(49, 49, 49))))
+                                    .addComponent(btnDeleteAudio, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGap(100, 100, 100))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -351,47 +346,53 @@ public class Frame20_AddBook extends javax.swing.JFrame {
                 .addGap(43, 43, 43)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(textFieldImage, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(5, 5, 5)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(btnDeleteCover)
+                            .addComponent(btnAddCover))
+                        .addGap(118, 118, 118))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel2)
                             .addComponent(textFieldId, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(36, 36, 36)
+                        .addGap(35, 35, 35)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel3)
                             .addComponent(textFieldCategory, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(42, 42, 42)
+                        .addGap(35, 35, 35)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel5)
-                            .addComponent(textFieldTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(textFieldImage, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel4)
-                            .addComponent(textFieldAuthor, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(51, 51, 51))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(btnAddBook2, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnAddBook1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(29, 29, 29)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel6)
-                            .addComponent(textFieldPdf, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnAddBook4, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnAddBook3, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(28, 28, 28)))
-                .addGap(3, 3, 3)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel7)
-                    .addComponent(textFieldAudio, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnAddBook5, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnAddBook6, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnAddBook, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnCancel, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(60, 60, 60))
+                            .addComponent(textFieldTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(35, 35, 35)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(textFieldAuthor, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(163, 163, 163)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(btnAddBook, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnCancel, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(jLabel4)
+                                        .addGap(98, 98, 98))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                        .addGap(65, 65, 65)
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                            .addComponent(jLabel6)
+                                            .addComponent(textFieldPdf, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(btnImportPDF, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(btnDeletePDF, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGap(29, 29, 29)))
+                                .addGap(3, 3, 3)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel7)
+                                    .addComponent(textFieldAudio, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(btnDeleteAudio, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(btnImportAudio, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                        .addGap(50, 50, 50))))
         );
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -408,7 +409,7 @@ public class Frame20_AddBook extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(100, 100, 100)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(65, Short.MAX_VALUE))
+                .addGap(100, 100, 100))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -515,15 +516,19 @@ public class Frame20_AddBook extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_textFieldCategoryActionPerformed
 
-    private void btnAddBook1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddBook1MouseEntered
+    private void btnAddCoverMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddCoverMouseEntered
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnAddBook1MouseEntered
+        btnAddCover.setBackground(new Color(20, 142, 255));
+        btnAddCover.setForeground(new Color(255, 255, 255));
+    }//GEN-LAST:event_btnAddCoverMouseEntered
 
-    private void btnAddBook1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddBook1MouseExited
+    private void btnAddCoverMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddCoverMouseExited
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnAddBook1MouseExited
+        btnAddCover.setBackground(new Color(255, 255, 255));
+        btnAddCover.setForeground(new Color(0, 0, 0));
+    }//GEN-LAST:event_btnAddCoverMouseExited
 
-    private void btnAddBook1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddBook1ActionPerformed
+    private void btnAddCoverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddCoverActionPerformed
         // TODO add your handling code here:
         JFileChooser chooser = new JFileChooser();
         chooser.showOpenDialog(null);
@@ -553,17 +558,21 @@ public class Frame20_AddBook extends javax.swing.JFrame {
                 System.out.println("");
             }
         }
-    }//GEN-LAST:event_btnAddBook1ActionPerformed
+    }//GEN-LAST:event_btnAddCoverActionPerformed
 
-    private void btnAddBook2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddBook2MouseEntered
+    private void btnDeleteCoverMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDeleteCoverMouseEntered
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnAddBook2MouseEntered
+        btnDeleteCover.setBackground(new Color(255, 59, 48));
+        btnDeleteCover.setForeground(new Color(255, 255, 255));
+    }//GEN-LAST:event_btnDeleteCoverMouseEntered
 
-    private void btnAddBook2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddBook2MouseExited
+    private void btnDeleteCoverMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDeleteCoverMouseExited
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnAddBook2MouseExited
+        btnDeleteCover.setBackground(new Color(255, 255, 255));
+        btnDeleteCover.setForeground(new Color(0,0,0));
+    }//GEN-LAST:event_btnDeleteCoverMouseExited
 
-    private void btnAddBook2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddBook2ActionPerformed
+    private void btnDeleteCoverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteCoverActionPerformed
         // TODO add your handling code here:
 
         ManageData.getManageData().setTemporaryAvatar(null);
@@ -574,7 +583,7 @@ public class Frame20_AddBook extends javax.swing.JFrame {
             ImageIcon ii = new ImageIcon(im);
             textFieldImage.setText("");
             textFieldImage.setIcon(ii);
-    }//GEN-LAST:event_btnAddBook2ActionPerformed
+    }//GEN-LAST:event_btnDeleteCoverActionPerformed
 
     private void textFieldPdfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textFieldPdfActionPerformed
         // TODO add your handling code here:
@@ -603,15 +612,20 @@ public class Frame20_AddBook extends javax.swing.JFrame {
         btnCancel.setForeground(new Color(255, 255, 255));
     }//GEN-LAST:event_btnCancelMouseEntered
 
-    private void btnAddBook3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddBook3MouseEntered
+    private void btnImportPDFMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnImportPDFMouseEntered
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnAddBook3MouseEntered
+        btnImportPDF.setBackground(new Color(20, 142, 255));
+        btnImportPDF.setForeground(new Color(255, 255, 255));
 
-    private void btnAddBook3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddBook3MouseExited
+    }//GEN-LAST:event_btnImportPDFMouseEntered
+
+    private void btnImportPDFMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnImportPDFMouseExited
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnAddBook3MouseExited
+        btnImportPDF.setBackground(new Color(255, 255, 255));
+        btnImportPDF.setForeground(new Color(0, 0, 0));
+    }//GEN-LAST:event_btnImportPDFMouseExited
 
-    private void btnAddBook3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddBook3ActionPerformed
+    private void btnImportPDFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnImportPDFActionPerformed
         // TODO add your handling code here:
         JFileChooser chooser = new JFileChooser();
         chooser.showOpenDialog(null);
@@ -620,43 +634,56 @@ public class Frame20_AddBook extends javax.swing.JFrame {
             String path = f.getAbsolutePath();
             textFieldPdf.setText(path);
         }
-    }//GEN-LAST:event_btnAddBook3ActionPerformed
+    }//GEN-LAST:event_btnImportPDFActionPerformed
 
-    private void btnAddBook4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddBook4MouseEntered
+    private void btnDeletePDFMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDeletePDFMouseEntered
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnAddBook4MouseEntered
+        btnDeletePDF.setBackground(new Color(255, 59, 48));
+        btnDeletePDF.setForeground(new Color(255, 255, 255));
+    }//GEN-LAST:event_btnDeletePDFMouseEntered
 
-    private void btnAddBook4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddBook4MouseExited
+    private void btnDeletePDFMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDeletePDFMouseExited
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnAddBook4MouseExited
+        btnDeletePDF.setBackground(new Color(255, 255, 255));
+        btnDeletePDF.setForeground(new Color(0,0,0));
+    }//GEN-LAST:event_btnDeletePDFMouseExited
 
-    private void btnAddBook4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddBook4ActionPerformed
+    private void btnDeletePDFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeletePDFActionPerformed
         // TODO add your handling code here:
         textFieldPdf.setText("");
-    }//GEN-LAST:event_btnAddBook4ActionPerformed
+    }//GEN-LAST:event_btnDeletePDFActionPerformed
 
-    private void btnAddBook5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddBook5MouseEntered
+    private void btnDeleteAudioMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDeleteAudioMouseEntered
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnAddBook5MouseEntered
+        btnDeleteAudio.setBackground(new Color(255, 59, 48));
+        btnDeleteAudio.setForeground(new Color(255, 255, 255));
+    }//GEN-LAST:event_btnDeleteAudioMouseEntered
 
-    private void btnAddBook5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddBook5MouseExited
+    private void btnDeleteAudioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDeleteAudioMouseExited
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnAddBook5MouseExited
+        btnDeleteAudio.setBackground(new Color(255, 255, 255));
+        btnDeleteAudio.setForeground(new Color(0,0,0));
+    }//GEN-LAST:event_btnDeleteAudioMouseExited
 
-    private void btnAddBook5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddBook5ActionPerformed
+    private void btnDeleteAudioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteAudioActionPerformed
         // TODO add your handling code here:
         textFieldAudio.setText("");
-    }//GEN-LAST:event_btnAddBook5ActionPerformed
+    }//GEN-LAST:event_btnDeleteAudioActionPerformed
 
-    private void btnAddBook6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddBook6MouseEntered
+    private void btnImportAudioMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnImportAudioMouseEntered
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnAddBook6MouseEntered
+        btnImportAudio.setBackground(new Color(20, 142, 255));
+        btnImportAudio.setForeground(new Color(255, 255, 255));
 
-    private void btnAddBook6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddBook6MouseExited
+    }//GEN-LAST:event_btnImportAudioMouseEntered
+
+    private void btnImportAudioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnImportAudioMouseExited
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnAddBook6MouseExited
+        btnImportAudio.setBackground(new Color(255, 255, 255));
+        btnImportAudio.setForeground(new Color(0, 0, 0));
+    }//GEN-LAST:event_btnImportAudioMouseExited
 
-    private void btnAddBook6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddBook6ActionPerformed
+    private void btnImportAudioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnImportAudioActionPerformed
         // TODO add your handling code here:
         JFileChooser chooser = new JFileChooser();
         chooser.showOpenDialog(null);
@@ -665,7 +692,7 @@ public class Frame20_AddBook extends javax.swing.JFrame {
             String path = f.getAbsolutePath();
             textFieldAudio.setText(path);
         }
-    }//GEN-LAST:event_btnAddBook6ActionPerformed
+    }//GEN-LAST:event_btnImportAudioActionPerformed
 
     /**
      * @param args the command line arguments
@@ -704,13 +731,13 @@ public class Frame20_AddBook extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAddBook;
-    private javax.swing.JButton btnAddBook1;
-    private javax.swing.JButton btnAddBook2;
-    private javax.swing.JButton btnAddBook3;
-    private javax.swing.JButton btnAddBook4;
-    private javax.swing.JButton btnAddBook5;
-    private javax.swing.JButton btnAddBook6;
+    private javax.swing.JButton btnAddCover;
     private javax.swing.JButton btnCancel;
+    private javax.swing.JButton btnDeleteAudio;
+    private javax.swing.JButton btnDeleteCover;
+    private javax.swing.JButton btnDeletePDF;
+    private javax.swing.JButton btnImportAudio;
+    private javax.swing.JButton btnImportPDF;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

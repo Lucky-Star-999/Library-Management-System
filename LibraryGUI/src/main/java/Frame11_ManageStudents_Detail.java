@@ -268,10 +268,14 @@ public class Frame11_ManageStudents_Detail extends javax.swing.JFrame {
 
     private void btnChangeFine1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnChangeFine1MouseEntered
         // TODO add your handling code here:
+        btnChangeFine1.setBackground(new Color(20, 142, 255));
+        btnChangeFine1.setForeground(new Color(255, 255, 255));
     }//GEN-LAST:event_btnChangeFine1MouseEntered
 
     private void btnChangeFine1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnChangeFine1MouseExited
         // TODO add your handling code here:
+        btnChangeFine1.setBackground(new Color(255, 255, 255));
+        btnChangeFine1.setForeground(new Color(0, 0, 0));
     }//GEN-LAST:event_btnChangeFine1MouseExited
 
     private void btnChangeFine1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnChangeFine1ActionPerformed

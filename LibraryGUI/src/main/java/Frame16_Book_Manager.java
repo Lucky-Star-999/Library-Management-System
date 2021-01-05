@@ -105,10 +105,10 @@ public class Frame16_Book_Manager extends javax.swing.JFrame {
         jComboBox1 = new javax.swing.JComboBox<>();
         btnDelete = new javax.swing.JButton();
         textFieldImage = new javax.swing.JLabel();
-        btnAddNewBook1 = new javax.swing.JButton();
+        btnSomeone = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
-        btnAddNewBook2 = new javax.swing.JButton();
+        btnRead = new javax.swing.JButton();
         btnBack3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -161,7 +161,6 @@ public class Frame16_Book_Manager extends javax.swing.JFrame {
         });
 
         btnBack.setFont(new java.awt.Font("Avenir Next", 1, 18)); // NOI18N
-        btnBack.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Documents\\GitHub\\Library-Management-Official-\\LibraryGUI\\src\\main\\java\\com\\mycompany\\librarygui\\Library_Icons\\icons8-back_1.png")); // NOI18N
         btnBack.setBorderPainted(false);
         btnBack.setContentAreaFilled(false);
         btnBack.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -196,7 +195,6 @@ public class Frame16_Book_Manager extends javax.swing.JFrame {
 
         btnSearch.setFont(new java.awt.Font("Avenir Next", 1, 10)); // NOI18N
         btnSearch.setForeground(new java.awt.Color(153, 153, 153));
-        btnSearch.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Documents\\GitHub\\Library-Management-Official-\\LibraryGUI\\src\\main\\java\\com\\mycompany\\librarygui\\Library_Icons\\icons8-search_1.png")); // NOI18N
         btnSearch.setBorder(null);
         btnSearch.setBorderPainted(false);
         btnSearch.setContentAreaFilled(false);
@@ -242,19 +240,19 @@ public class Frame16_Book_Manager extends javax.swing.JFrame {
             }
         });
 
-        btnAddNewBook1.setFont(new java.awt.Font("Avenir Next", 1, 18)); // NOI18N
-        btnAddNewBook1.setText("Someone Borrow");
-        btnAddNewBook1.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnSomeone.setFont(new java.awt.Font("Avenir Next", 1, 18)); // NOI18N
+        btnSomeone.setText("Borrower");
+        btnSomeone.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnAddNewBook1MouseEntered(evt);
+                btnSomeoneMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnAddNewBook1MouseExited(evt);
+                btnSomeoneMouseExited(evt);
             }
         });
-        btnAddNewBook1.addActionListener(new java.awt.event.ActionListener() {
+        btnSomeone.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAddNewBook1ActionPerformed(evt);
+                btnSomeoneActionPerformed(evt);
             }
         });
 
@@ -274,24 +272,23 @@ public class Frame16_Book_Manager extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(jTable1);
 
-        btnAddNewBook2.setFont(new java.awt.Font("Avenir Next", 1, 18)); // NOI18N
-        btnAddNewBook2.setText("Read pdf");
-        btnAddNewBook2.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnRead.setFont(new java.awt.Font("Avenir Next", 1, 18)); // NOI18N
+        btnRead.setText("Read PDF");
+        btnRead.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnAddNewBook2MouseEntered(evt);
+                btnReadMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnAddNewBook2MouseExited(evt);
+                btnReadMouseExited(evt);
             }
         });
-        btnAddNewBook2.addActionListener(new java.awt.event.ActionListener() {
+        btnRead.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAddNewBook2ActionPerformed(evt);
+                btnReadActionPerformed(evt);
             }
         });
 
         btnBack3.setFont(new java.awt.Font("Avenir Next", 1, 18)); // NOI18N
-        btnBack3.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Documents\\GitHub\\Library-Management-System\\LibraryGUI\\src\\main\\java\\com\\mycompany\\librarygui\\Library_Icons\\Audio-512.png")); // NOI18N
         btnBack3.setBorderPainted(false);
         btnBack3.setContentAreaFilled(false);
         btnBack3.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -313,14 +310,14 @@ public class Frame16_Book_Manager extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(56, 56, 56)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(100, 100, 100)
                         .addComponent(btnBack, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 880, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(56, 56, 56)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(textFieldImage, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(btnDelete, javax.swing.GroupLayout.DEFAULT_SIZE, 243, Short.MAX_VALUE))
@@ -344,9 +341,9 @@ public class Frame16_Book_Manager extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(btnAddNewBook)
                                 .addGap(18, 18, 18)
-                                .addComponent(btnAddNewBook1)
+                                .addComponent(btnSomeone)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(btnAddNewBook2)
+                                .addComponent(btnRead)
                                 .addGap(18, 18, 18)
                                 .addComponent(btnBack3, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(0, 0, Short.MAX_VALUE)))))
@@ -381,8 +378,8 @@ public class Frame16_Book_Manager extends javax.swing.JFrame {
                         .addComponent(btnAddNewBook, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(btnShowList, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(btnDelete, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(btnAddNewBook1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(btnAddNewBook2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(btnSomeone, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnRead, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(btnBack3, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(50, Short.MAX_VALUE))
         );
@@ -587,15 +584,19 @@ public class Frame16_Book_Manager extends javax.swing.JFrame {
         jComboBox1.setSelectedItem("<All Category>");
     }//GEN-LAST:event_btnDeleteActionPerformed
 
-    private void btnAddNewBook1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddNewBook1MouseEntered
+    private void btnSomeoneMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSomeoneMouseEntered
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnAddNewBook1MouseEntered
+        btnSomeone.setBackground(new Color(20, 142, 255));
+        btnSomeone.setForeground(new Color(255, 255, 255));
+    }//GEN-LAST:event_btnSomeoneMouseEntered
 
-    private void btnAddNewBook1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddNewBook1MouseExited
+    private void btnSomeoneMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSomeoneMouseExited
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnAddNewBook1MouseExited
+        btnSomeone.setBackground(new Color(255, 255, 255));
+        btnSomeone.setForeground(new Color(0, 0, 0));
+    }//GEN-LAST:event_btnSomeoneMouseExited
 
-    private void btnAddNewBook1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddNewBook1ActionPerformed
+    private void btnSomeoneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSomeoneActionPerformed
         // TODO add your handling code here:
         int i = jTable1.getSelectedRow();
         if(i != -1){
@@ -607,7 +608,7 @@ public class Frame16_Book_Manager extends javax.swing.JFrame {
             Frame21_StudentBorrowBook frame21 = new Frame21_StudentBorrowBook();
             frame21.setVisible(true);
         }
-    }//GEN-LAST:event_btnAddNewBook1ActionPerformed
+    }//GEN-LAST:event_btnSomeoneActionPerformed
 
     private void jComboBox1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jComboBox1MouseClicked
         // TODO add your handling code here:
@@ -635,15 +636,19 @@ public class Frame16_Book_Manager extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jTable1MouseClicked
 
-    private void btnAddNewBook2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddNewBook2MouseEntered
+    private void btnReadMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnReadMouseEntered
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnAddNewBook2MouseEntered
+        btnRead.setBackground(new Color(20, 142, 255));
+        btnRead.setForeground(new Color(255, 255, 255));
+    }//GEN-LAST:event_btnReadMouseEntered
 
-    private void btnAddNewBook2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddNewBook2MouseExited
+    private void btnReadMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnReadMouseExited
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnAddNewBook2MouseExited
+        btnRead.setBackground(new Color(255, 255, 255));
+        btnRead.setForeground(new Color(0, 0, 0));
+    }//GEN-LAST:event_btnReadMouseExited
 
-    private void btnAddNewBook2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddNewBook2ActionPerformed
+    private void btnReadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReadActionPerformed
         // TODO add your handling code here:
         int i = jTable1.getSelectedRow();
         if(i != -1){
@@ -659,7 +664,7 @@ public class Frame16_Book_Manager extends javax.swing.JFrame {
             }
 
         }
-    }//GEN-LAST:event_btnAddNewBook2ActionPerformed
+    }//GEN-LAST:event_btnReadActionPerformed
 
     private void btnBack3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBack3MouseEntered
         // TODO add your handling code here:
@@ -724,13 +729,13 @@ public class Frame16_Book_Manager extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAddNewBook;
-    private javax.swing.JButton btnAddNewBook1;
-    private javax.swing.JButton btnAddNewBook2;
     private javax.swing.JButton btnBack;
     private javax.swing.JButton btnBack3;
     private javax.swing.JButton btnDelete;
+    private javax.swing.JButton btnRead;
     private javax.swing.JButton btnSearch;
     private javax.swing.JButton btnShowList;
+    private javax.swing.JButton btnSomeone;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
