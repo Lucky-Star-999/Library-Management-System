@@ -18,6 +18,9 @@ import java.io.File;
 import javax.swing.ImageIcon;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -45,7 +48,7 @@ public class Frame21_StudentBorrowBook extends javax.swing.JFrame {
         
         DefaultTableModel model = (DefaultTableModel)jTable1.getModel();
         
-        model.setRowCount(0);
+        /*model.setRowCount(0);
         for(Student value: ManageData.getManageData().allStudent.values()){
             String overdue;
             if (value.getFine()>0){
@@ -55,6 +58,44 @@ public class Frame21_StudentBorrowBook extends javax.swing.JFrame {
                 overdue = "No";
             }
             model.addRow( new Object[]{ value.getIdStudent(), value.getFullName(), value.getPhone(), value.getUsername(), overdue } );
+        }*/
+        
+        model.setRowCount(0);
+        
+        //Add the features sort here++++++++++++++++++++++++++++++++++++++++++++
+        ArrayList<String> nameSorted = new ArrayList<String>();
+        for(Student value: ManageData.getManageData().allStudent.values()){
+            nameSorted.add(value.getFullName());
+        }
+        Collections.sort(nameSorted);
+        //System.out.println(nameSorted);
+        
+        //----------------------------------------------------------------------
+        
+        for(String key: nameSorted){
+        for(Student value: ManageData.getManageData().allStudent.values()){
+            int i=0;
+            /*LocalDate startBorrowed = LocalDate.parse(value.getStartBorrowed(), formatter);
+            Period period = Period.between(startBorrowed, today);
+            int differentDays = period.getDays();*/
+            if(value.getFullName().equals(key)){
+            String overdue;
+            if (value.getFine()>0){
+                overdue = "Yes";
+            }
+            else{
+                overdue = "No";
+            }
+            //model.addRow( new Object[]{ value.getIdStudent(), value.getFullName(), value.getPhone(), value.getUsername(), "No" } );
+            model.addRow( new Object[]{ value.getIdStudent(), value.getFullName(), value.getPhone(), value.getUsername(), overdue } );
+            /*if (value.getFine()>0){
+                model.setRowColor(i, Color.PINK);
+            }*/
+  
+            i++;
+            //model.addRow( new Object[]{ value.getIdStudent(), value.getFullName(), value.getPhone(), value.getUsername(), differentDays } );
+        }
+        }
         }
         
         
@@ -336,7 +377,7 @@ public class Frame21_StudentBorrowBook extends javax.swing.JFrame {
 
     private void btnLibraryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLibraryActionPerformed
         // TODO add your handling code here:
-        DefaultTableModel model = (DefaultTableModel)jTable1.getModel();
+        /*DefaultTableModel model = (DefaultTableModel)jTable1.getModel();
         model.setRowCount(0);
         for(Student value: ManageData.getManageData().allStudent.values()){
             String overdue;
@@ -347,6 +388,50 @@ public class Frame21_StudentBorrowBook extends javax.swing.JFrame {
                 overdue = "No";
             }
             model.addRow( new Object[]{ value.getIdStudent(), value.getFullName(), value.getPhone(), value.getUsername(), overdue } );
+        }*/
+        DefaultTableModel model = (DefaultTableModel)jTable1.getModel();
+        
+        /*DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        LocalDate today = java.time.LocalDate.now();*/
+        
+        //String date = formatter.format(java.time.LocalDate.now());   
+        
+        model.setRowCount(0);
+        
+        //Add the features sort here++++++++++++++++++++++++++++++++++++++++++++
+        ArrayList<String> nameSorted = new ArrayList<String>();
+        for(Student value: ManageData.getManageData().allStudent.values()){
+            nameSorted.add(value.getFullName());
+        }
+        Collections.sort(nameSorted);
+        //System.out.println(nameSorted);
+        
+        //----------------------------------------------------------------------
+        
+        for(String key: nameSorted){
+        for(Student value: ManageData.getManageData().allStudent.values()){
+            int i=0;
+            /*LocalDate startBorrowed = LocalDate.parse(value.getStartBorrowed(), formatter);
+            Period period = Period.between(startBorrowed, today);
+            int differentDays = period.getDays();*/
+            if(value.getFullName().equals(key)){
+            String overdue;
+            if (value.getFine()>0){
+                overdue = "Yes";
+            }
+            else{
+                overdue = "No";
+            }
+            //model.addRow( new Object[]{ value.getIdStudent(), value.getFullName(), value.getPhone(), value.getUsername(), "No" } );
+            model.addRow( new Object[]{ value.getIdStudent(), value.getFullName(), value.getPhone(), value.getUsername(), overdue } );
+            /*if (value.getFine()>0){
+                model.setRowColor(i, Color.PINK);
+            }*/
+  
+            i++;
+            //model.addRow( new Object[]{ value.getIdStudent(), value.getFullName(), value.getPhone(), value.getUsername(), differentDays } );
+        }
+        }
         }
     }//GEN-LAST:event_btnLibraryActionPerformed
 
@@ -388,7 +473,7 @@ public class Frame21_StudentBorrowBook extends javax.swing.JFrame {
             model.addRow( new Object[]{ value.getIdStudent(), value.getFullName(), value.getPhone(), value.getUsername(), "No" } );
         }*/
         
-        for(Student value: Searching.getSearching().mergeSearch.values()){
+        /*for(Student value: Searching.getSearching().mergeSearch.values()){
             String overdue;
             if (value.getFine()>0){
                 overdue = "Yes";
@@ -397,6 +482,26 @@ public class Frame21_StudentBorrowBook extends javax.swing.JFrame {
                 overdue = "No";
             }
             model.addRow( new Object[]{ value.getIdStudent(), value.getFullName(), value.getPhone(), value.getUsername(), overdue } );
+        }*/
+        ArrayList<String> nameSorted = new ArrayList<String>();
+        for(Student value: Searching.getSearching().mergeSearch.values()){
+            nameSorted.add(value.getFullName());
+        }
+        Collections.sort(nameSorted);
+        //----------------------------------------------------------------
+        for(String key: nameSorted){
+        for(Student value: Searching.getSearching().mergeSearch.values()){
+            if(value.getFullName().equals(key)){
+            String overdue;
+            if (value.getFine()>0){
+                overdue = "Yes";
+            }
+            else{
+                overdue = "No";
+            }
+            model.addRow( new Object[]{ value.getIdStudent(), value.getFullName(), value.getPhone(), value.getUsername(), overdue } );
+        }
+        }
         }
      
     }//GEN-LAST:event_btnLibrary1ActionPerformed
