@@ -375,33 +375,6 @@ public class ManageData {
         }
     }
     
-    /*public void copyCategoryMapComboBox(JComboBox jComboBox1){
-        this.comboBoxSupport.clear();
-        for(Book key: allBook.values()){
-            this.comboBoxSupport.put(key.getCategory(), "1");
-        }
-        for (String key: comboBoxSupport.keySet()){
-            jComboBox1.addItem(key);
-        }
-    }*/
-    
-    /*public void updateStudentFine(){
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-        LocalDate today = java.time.LocalDate.now();
-        
-        for(Book value: ManageData.getManageData().allBook.values()){
-            if (!value.getWho_is_borrowing_this_book().equals("null")){
-                LocalDate startBorrowed = LocalDate.parse(value.getStartBorrowed(), formatter);
-                Period period = Period.between(startBorrowed, today);
-                int differentDays = period.getDays();
-                System.out.println(differentDays);
-                if (differentDays > 10){
-                    this.allStudent.get(value.getWho_is_borrowing_this_book()).setFine((differentDays - 10)*15000);
-                }
-            }
-            
-        }
-    }*/
     
     public void updateStudentFine(){
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
@@ -430,27 +403,7 @@ public class ManageData {
         }
     }
     
-    
-    /*public void openPdfFile(String path){
-        try{
-            Runtime.getRuntime().exec("rundll32 url.dll, FileProtocolHandler " + path);
-        }
-        catch(Exception e){
-            Desktop desktop = Desktop.getDesktop();
-            if (desktop.isSupported(Desktop.Action.OPEN)) {
-                try {
-                    desktop.open(new File(path));
-                } catch (IOException ex) {
-                    //Logger.getLogger(ManageData.class.getName()).log(Level.SEVERE, null, ex);
-                    JOptionPane.showMessageDialog(null, "This file is not supported by the system");
-                }
-            } 
-            else {
-                System.out.println("Open is not supported");
-            }
-            //JOptionPane.showMessageDialog(null, "This file is not supported by the system");
-        }
-    }*/
+
     
     public void openPdfFile(String path){
             Desktop desktop = Desktop.getDesktop();

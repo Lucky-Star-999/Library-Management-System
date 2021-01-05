@@ -382,12 +382,7 @@ public class Frame5_RegisterStudent extends javax.swing.JFrame {
         String regex = "[0-9]+"; 
         Pattern p = Pattern.compile(regex); 
         Matcher m = p.matcher(textFieldPhone.getText()); 
-        /*if (!m.matches()){
-            JOptionPane.showMessageDialog(null, "You are very cute with your phone number :>\n"
-                    + "But I really want to contact you.\n Do you know what I mean?");
-        }*/
-
-        
+  
         if(!textFieldEmail.getText().equals("") && !textFieldID.getText().equals("") && !textFieldFullName.getText().equals("") ){
             if (!textFieldPhone.getText().equals("") && !String.valueOf(passwordField.getPassword()).equals("")){
                 if (!username.equals("")){

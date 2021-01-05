@@ -387,12 +387,9 @@ public class Frame8_EditProfile extends javax.swing.JFrame {
     private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
         // TODO add your handling code here:
         String userUsing = ManageData.getManageData().getWho_is_using_this_program();
-        //ManageData.getManageData().allStudent.get(userUsing).setLinkOfAvatar(null);
         String oldPath = ManageData.getManageData().allManager.get(userUsing).getLinkOfAvatar();
 
         ManageData.getManageData().setTemporaryAvatar(null);
-        //Save ...
-        //ManageData.getManageData().saveAllStudent();
         
             String linkAvatar = null;
             Image im = Toolkit.getDefaultToolkit().createImage(linkAvatar);

@@ -430,8 +430,7 @@ public class Frame7_ProfileStudent extends javax.swing.JFrame {
     private void btnLibrary1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLibrary1ActionPerformed
         // TODO add your handling code here:
         String username = ManageData.getManageData().getWho_is_using_this_program();
-        //ManageData.getManageData().allStudent.remove(username);
-        //ManageData.getManageData().saveAllStudent();
+
         int count = 0;
         for(Book value: ManageData.getManageData().allBook.values()){
             if(value.getWho_is_borrowing_this_book()!=null){
@@ -456,9 +455,6 @@ public class Frame7_ProfileStudent extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "You need to return all the book first!");
         }
         
-        /*this.dispose();
-        Frame3_LoginStudent frame3 = new Frame3_LoginStudent();
-        frame3.setVisible(true);*/
     }//GEN-LAST:event_btnLibrary1ActionPerformed
 
     /**
