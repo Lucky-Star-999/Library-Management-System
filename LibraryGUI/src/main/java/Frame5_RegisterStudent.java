@@ -1,6 +1,7 @@
 
 import java.awt.Color;
 import javax.swing.JOptionPane;
+import java.util.regex.*; 
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -378,7 +379,14 @@ public class Frame5_RegisterStudent extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
         String username = textFieldUsername.getText();
-        
+        String regex = "[0-9]+"; 
+        Pattern p = Pattern.compile(regex); 
+        Matcher m = p.matcher(textFieldPhone.getText()); 
+        /*if (!m.matches()){
+            JOptionPane.showMessageDialog(null, "You are very cute with your phone number :>\n"
+                    + "But I really want to contact you.\n Do you know what I mean?");
+        }*/
+
         
         if(!textFieldEmail.getText().equals("") && !textFieldID.getText().equals("") && !textFieldFullName.getText().equals("") ){
             if (!textFieldPhone.getText().equals("") && !String.valueOf(passwordField.getPassword()).equals("")){
@@ -391,6 +399,11 @@ public class Frame5_RegisterStudent extends javax.swing.JFrame {
                     }
                     
                     if (checkLogin){
+                        if (!m.matches()){
+                            JOptionPane.showMessageDialog(null, "You are very cute with your phone number :>\n"
+                            + "But I really want to contact you.\n Do you know what I mean?");
+                        }
+                        else{
                         ManageData.getManageData().allStudent.put(username, new Student());
                         ManageData.getManageData().allStudent.get(username).setUsername(username);
                         ManageData.getManageData().allStudent.get(username).setEmail(textFieldEmail.getText());
@@ -401,6 +414,7 @@ public class Frame5_RegisterStudent extends javax.swing.JFrame {
 
                         ManageData.getManageData().saveAllStudent();
                         JOptionPane.showMessageDialog(null, "Register successfully!\nPress \"Cancel\" to login!");
+                        }
                     }
                     else{
                         JOptionPane.showMessageDialog(null, "Duplicate the old username!\nChoose another username!");
@@ -412,6 +426,7 @@ public class Frame5_RegisterStudent extends javax.swing.JFrame {
         else{
             JOptionPane.showMessageDialog(null, "Please fill in all information!");
         }
+        
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed

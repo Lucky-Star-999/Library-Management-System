@@ -1,6 +1,7 @@
 
 import java.awt.Color;
 import javax.swing.JOptionPane;
+import java.util.regex.*; 
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -342,7 +343,9 @@ public class Frame4_RegisterManager extends javax.swing.JFrame {
     private void btnSignUpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSignUpActionPerformed
         // TODO add your handling code here:
         String username = textFieldUsername.getText();
-        
+        String regex = "[0-9]+"; 
+        Pattern p = Pattern.compile(regex); 
+        Matcher m = p.matcher(textFieldPhone.getText()); 
         
         if(!textFieldEmail.getText().equals("") && !textFieldFullName.getText().equals("") ){
             if (!textFieldPhone.getText().equals("") && !String.valueOf(passwordField.getPassword()).equals("")){
@@ -355,6 +358,11 @@ public class Frame4_RegisterManager extends javax.swing.JFrame {
                     }
                     
                     if (checkLogin){
+                        if (!m.matches()){
+                            JOptionPane.showMessageDialog(null, "You are very cute with your phone number :>\n"
+                            + "But I really want to contact you.\n Do you know what I mean?");
+                        }
+                        else{
                         ManageData.getManageData().allManager.put(username, new Manager());
                         ManageData.getManageData().allManager.get(username).setUsername(username);
                         ManageData.getManageData().allManager.get(username).setEmail(textFieldEmail.getText());
@@ -364,6 +372,7 @@ public class Frame4_RegisterManager extends javax.swing.JFrame {
 
                         ManageData.getManageData().saveAllManager();
                         JOptionPane.showMessageDialog(null, "Register successfully!\nPress \"Cancel\" to login!");
+                        }
                     }
                     else{
                         JOptionPane.showMessageDialog(null, "Duplicate the old username!\nChoose another username!");
