@@ -432,6 +432,15 @@ public class Frame7_ProfileStudent extends javax.swing.JFrame {
         String username = ManageData.getManageData().getWho_is_using_this_program();
         //ManageData.getManageData().allStudent.remove(username);
         //ManageData.getManageData().saveAllStudent();
+        int count = 0;
+        for(Book value: ManageData.getManageData().allBook.values()){
+            if(value.getWho_is_borrowing_this_book()!=null){
+            if (value.getWho_is_borrowing_this_book().equals(username)){
+                count++;
+            }
+        }
+        }
+        if (count == 0){
         int dialogButton = JOptionPane.YES_NO_OPTION;
         int dialogResult = JOptionPane.showConfirmDialog (null, "Do you want to delete your account?\nAre you sure?","Warning",dialogButton);
         if(dialogResult == JOptionPane.YES_OPTION){
@@ -441,6 +450,10 @@ public class Frame7_ProfileStudent extends javax.swing.JFrame {
             this.dispose();
             Frame3_LoginStudent frame3 = new Frame3_LoginStudent();
             frame3.setVisible(true);
+        }
+        }
+        else{
+            JOptionPane.showMessageDialog(null, "You need to return all the book first!");
         }
         
         /*this.dispose();

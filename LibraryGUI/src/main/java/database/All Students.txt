@@ -6,19 +6,3 @@ theboost1305@gmail.com
 ITITIU19023
 0
 src/main/java/avatar/Cute Star.png
-user3
-123456
-User 3
-aaaaaaa
-1111111
-C
-0
-null
-user4
-123456
-User 4
-aaaaaaa
-1111111
-D
-0
-null
