@@ -51,6 +51,12 @@ public class Frame16_Book_Manager extends javax.swing.JFrame {
         ImageIcon ii2 = new ImageIcon(im2);
         btnSearch.setIcon(ii2);
         
+        String linkImageButton3 = "src/main/java/com/mycompany/librarygui/Library_Icons/Audio-512.png";
+        Image im3 = Toolkit.getDefaultToolkit().createImage(linkImageButton3);
+        im3 = im3.getScaledInstance(btnBack3.getWidth(), btnBack3.getHeight(), Image.SCALE_SMOOTH);
+        ImageIcon ii3 = new ImageIcon(im3);
+        btnBack3.setIcon(ii3);
+        
         
         //Set table show
         ManageData.getManageData().setBook_choosen(null);
@@ -102,6 +108,7 @@ public class Frame16_Book_Manager extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         btnAddNewBook2 = new javax.swing.JButton();
+        btnBack3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -282,6 +289,24 @@ public class Frame16_Book_Manager extends javax.swing.JFrame {
             }
         });
 
+        btnBack3.setFont(new java.awt.Font("Avenir Next", 1, 18)); // NOI18N
+        btnBack3.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Documents\\GitHub\\Library-Management-System\\LibraryGUI\\src\\main\\java\\com\\mycompany\\librarygui\\Library_Icons\\Audio-512.png")); // NOI18N
+        btnBack3.setBorderPainted(false);
+        btnBack3.setContentAreaFilled(false);
+        btnBack3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnBack3MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnBack3MouseExited(evt);
+            }
+        });
+        btnBack3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBack3ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -301,6 +326,7 @@ public class Frame16_Book_Manager extends javax.swing.JFrame {
                         .addGap(41, 41, 41)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
                                 .addComponent(jLabel2)
                                 .addGap(18, 18, 18)
                                 .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -320,6 +346,8 @@ public class Frame16_Book_Manager extends javax.swing.JFrame {
                                 .addComponent(btnAddNewBook1)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(btnAddNewBook2)
+                                .addGap(18, 18, 18)
+                                .addComponent(btnBack3, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(0, 0, Short.MAX_VALUE)))))
                 .addGap(76, 76, 76))
         );
@@ -347,12 +375,14 @@ public class Frame16_Book_Manager extends javax.swing.JFrame {
                     .addComponent(textFieldImage, javax.swing.GroupLayout.PREFERRED_SIZE, 299, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 294, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnAddNewBook, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnShowList, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnDelete, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnAddNewBook1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnAddNewBook2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(btnAddNewBook, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnShowList, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnDelete, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnAddNewBook1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnAddNewBook2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnBack3, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(50, Short.MAX_VALUE))
         );
 
@@ -637,6 +667,27 @@ public class Frame16_Book_Manager extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btnAddNewBook2ActionPerformed
 
+    private void btnBack3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBack3MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBack3MouseEntered
+
+    private void btnBack3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBack3MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBack3MouseExited
+
+    private void btnBack3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBack3ActionPerformed
+        // TODO add your handling code here:
+        int i = jTable1.getSelectedRow();
+        if(i != -1){
+            String id = String.valueOf(jTable1.getValueAt(i, 0));
+            //ManageData.getManageData().setBook_choosen(id);
+            String link = ManageData.getManageData().allBook.get(id).getLinkAudio();
+            File file = new File(link);
+            ManageData.getManageData().openPdfFile(file.getAbsolutePath());
+
+        }
+    }//GEN-LAST:event_btnBack3ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -677,6 +728,7 @@ public class Frame16_Book_Manager extends javax.swing.JFrame {
     private javax.swing.JButton btnAddNewBook1;
     private javax.swing.JButton btnAddNewBook2;
     private javax.swing.JButton btnBack;
+    private javax.swing.JButton btnBack3;
     private javax.swing.JButton btnDelete;
     private javax.swing.JButton btnSearch;
     private javax.swing.JButton btnShowList;

@@ -100,6 +100,7 @@ public class Frame14_Book_Student extends javax.swing.JFrame {
         textFieldImage = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
+        btnUpcoming1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -227,6 +228,22 @@ public class Frame14_Book_Student extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(jTable1);
 
+        btnUpcoming1.setFont(new java.awt.Font("Avenir Next", 1, 18)); // NOI18N
+        btnUpcoming1.setText("Listen Audio");
+        btnUpcoming1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnUpcoming1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnUpcoming1MouseExited(evt);
+            }
+        });
+        btnUpcoming1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnUpcoming1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -243,11 +260,6 @@ public class Frame14_Book_Student extends javax.swing.JFrame {
                         .addComponent(textFieldImage, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(43, 43, 43)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(btnShowList)
-                                .addGap(110, 110, 110)
-                                .addComponent(btnUpcoming)
-                                .addGap(0, 0, Short.MAX_VALUE))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                                 .addGap(0, 0, Short.MAX_VALUE)
                                 .addComponent(jLabel2)
@@ -260,7 +272,14 @@ public class Frame14_Book_Student extends javax.swing.JFrame {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(jTextField_Search, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 296, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addComponent(jScrollPane1))))
+                            .addComponent(jScrollPane1)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(btnShowList)
+                                .addGap(110, 110, 110)
+                                .addComponent(btnUpcoming)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(btnUpcoming1)
+                                .addGap(62, 62, 62)))))
                 .addContainerGap(100, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -289,7 +308,8 @@ public class Frame14_Book_Student extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnUpcoming)
-                    .addComponent(btnShowList))
+                    .addComponent(btnShowList)
+                    .addComponent(btnUpcoming1))
                 .addContainerGap(50, Short.MAX_VALUE))
         );
 
@@ -481,6 +501,27 @@ public class Frame14_Book_Student extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jTable1MouseClicked
 
+    private void btnUpcoming1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnUpcoming1MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnUpcoming1MouseEntered
+
+    private void btnUpcoming1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnUpcoming1MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnUpcoming1MouseExited
+
+    private void btnUpcoming1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUpcoming1ActionPerformed
+        // TODO add your handling code here:
+        int i = jTable1.getSelectedRow();
+        if(i != -1){
+            String id = String.valueOf(jTable1.getValueAt(i, 0));
+            //ManageData.getManageData().setBook_choosen(id);
+            String link = ManageData.getManageData().allBook.get(id).getLinkAudio();
+            File file = new File(link);
+            ManageData.getManageData().openPdfFile(file.getAbsolutePath());
+
+        }
+    }//GEN-LAST:event_btnUpcoming1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -521,6 +562,7 @@ public class Frame14_Book_Student extends javax.swing.JFrame {
     private javax.swing.JButton btnSearch;
     private javax.swing.JButton btnShowList;
     private javax.swing.JButton btnUpcoming;
+    private javax.swing.JButton btnUpcoming1;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
