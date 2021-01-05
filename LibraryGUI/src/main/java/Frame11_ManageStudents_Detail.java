@@ -278,14 +278,11 @@ public class Frame11_ManageStudents_Detail extends javax.swing.JFrame {
         // TODO add your handling code here:
         int i = jTable1.getSelectedRow();
         
-        //ManageData.getManageData().updateStudentFine();
         
         if (i != -1){
             String id = String.valueOf(jTable1.getValueAt(i, 0));
             
             String userChoosen = ManageData.getManageData().allBook.get(id).getWho_is_borrowing_this_book();
-            //String fine = String.valueOf(ManageData.getManageData().allStudent.get(userChoosen).getFine()) + " VND";
-            //textFieldFine.setText(fine);
             
             ManageData.getManageData().allBook.get(id).setWho_is_borrowing_this_book(null);
             ManageData.getManageData().allBook.get(id).setStartBorrowed(null);
@@ -301,12 +298,10 @@ public class Frame11_ManageStudents_Detail extends javax.swing.JFrame {
             ManageData.getManageData().setBook_choosen(null);
             JOptionPane.showMessageDialog(null, "Return book successfully!\nPress \"Back\" to return!");
             
-            //System.out.println(ManageData.getManageData().getUsername_choosen());
             
             DefaultTableModel model = (DefaultTableModel)jTable1.getModel();
             
             model.setRowCount(0);
-            //System.out.println(ManageData.getManageData().getUsername_choosen());
             String username = ManageData.getManageData().getUsername_choosen();
 
             
@@ -314,8 +309,6 @@ public class Frame11_ManageStudents_Detail extends javax.swing.JFrame {
             fine = String.valueOf(ManageData.getManageData().allStudent.get(userChoosen).getFine()) + " VND";
             textFieldFine.setText(fine);
             
-            //System.out.println(username);
-            //System.out.println(ManageData.getManageData().allBook.values());
             for(Book value: ManageData.getManageData().allBook.values()){
                 if (value.getWho_is_borrowing_this_book()!=null){
                     if (value.getWho_is_borrowing_this_book().equals(username)){

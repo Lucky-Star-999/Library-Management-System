@@ -425,7 +425,6 @@ public class Frame14_Book_Student extends javax.swing.JFrame {
         int i = jTable1.getSelectedRow();
         if(i != -1){
             String id = String.valueOf(jTable1.getValueAt(i, 0));
-            //ManageData.getManageData().setBook_choosen(id);
             String link = ManageData.getManageData().allBook.get(id).getLinkPdf();
             File file = new File(link);
             
@@ -435,7 +434,6 @@ public class Frame14_Book_Student extends javax.swing.JFrame {
             else{
                 ManageData.getManageData().openPdfFile(file.getAbsolutePath());
             }
-            //ManageData.getManageData().openPdfFile(file.getAbsolutePath());
 
         }
     }//GEN-LAST:event_btnUpcomingActionPerformed
@@ -463,25 +461,12 @@ public class Frame14_Book_Student extends javax.swing.JFrame {
         // TODO add your handling code here:
         String search = jTextField_Search.getText();
         
-        //Searching.getSearching().translateToSearchStudentByName(search);
-        //Searching.getSearching().translateToSearchStudentById(search);
-        
         //New methods
         Searching.getSearching().mergeSearchBook(search);
-        
-        
+           
         DefaultTableModel model = (DefaultTableModel)jTable1.getModel();
         
         model.setRowCount(0);
-        
-        /*for(Student value: Searching.getSearching().searchStudentByName.values()){
-            model.addRow( new Object[]{ value.getIdStudent(), value.getFullName(), value.getPhone(), value.getUsername(), "No" } );
-        }
-
-        for(Student value: Searching.getSearching().searchStudentById.values()){
-            model.addRow( new Object[]{ value.getIdStudent(), value.getFullName(), value.getPhone(), value.getUsername(), "No" } );
-        }*/
-        
         
         for(Book value: Searching.getSearching().searchBookByNameAndId.values()){
             model.addRow( new Object[]{ value.getIdBook(), value.getCategory(), value.getTitle(), value.getAuthor(), value.getAvailable() } );
@@ -522,7 +507,6 @@ public class Frame14_Book_Student extends javax.swing.JFrame {
         int i = jTable1.getSelectedRow();
         if(i != -1){
             String id = String.valueOf(jTable1.getValueAt(i, 0));
-            //ManageData.getManageData().setBook_choosen(id);
             String link = ManageData.getManageData().allBook.get(id).getLinkAudio();
             File file = new File(link);
             
@@ -532,7 +516,6 @@ public class Frame14_Book_Student extends javax.swing.JFrame {
             else{
                 ManageData.getManageData().openPdfFile(file.getAbsolutePath());
             }
-            //ManageData.getManageData().openPdfFile(file.getAbsolutePath());
 
         }
     }//GEN-LAST:event_btnUpcoming1ActionPerformed

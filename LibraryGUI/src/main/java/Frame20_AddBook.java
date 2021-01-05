@@ -484,18 +484,7 @@ public class Frame20_AddBook extends javax.swing.JFrame {
         else{
             JOptionPane.showMessageDialog(null, "There already existed an ID book.\nPlease enter another ID!");
         }
-        /*ManageData.getManageData().allBook.put(id, new Book());
-        ManageData.getManageData().allBook.get(id).setAuthor(textFieldAuthor.getText());
-        ManageData.getManageData().allBook.get(id).setCategory(textFieldCategory.getText());
-        ManageData.getManageData().allBook.get(id).setIdBook(id);
-        ManageData.getManageData().allBook.get(id).setTitle(textFieldTitle.getText());
-        ManageData.getManageData().allBook.get(id).setAvailable("Yes");
-        
-        String path = ManageData.getManageData().getTemporaryAvatar();
-        ManageData.getManageData().allBook.get(id).setLink(path);
-        
-        ManageData.getManageData().saveAllBook();
-        JOptionPane.showMessageDialog(null, "Add book successfully!\nPress \"Cancel\" to return");*/
+
     }//GEN-LAST:event_btnAddBookActionPerformed
 
     private void btnAddBookMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddBookMouseExited
@@ -576,13 +565,8 @@ public class Frame20_AddBook extends javax.swing.JFrame {
 
     private void btnAddBook2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddBook2ActionPerformed
         // TODO add your handling code here:
-        //String userUsing = ManageData.getManageData().getWho_is_using_this_program();
-        //ManageData.getManageData().allStudent.get(userUsing).setLinkOfAvatar(null);
-        //String oldPath = ManageData.getManageData().allManager.get(userUsing).getLinkOfAvatar();
 
         ManageData.getManageData().setTemporaryAvatar(null);
-        //Save ...
-        //ManageData.getManageData().saveAllStudent();
         
             String linkAvatar = null;
             Image im = Toolkit.getDefaultToolkit().createImage(linkAvatar);

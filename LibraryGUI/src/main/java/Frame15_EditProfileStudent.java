@@ -397,12 +397,10 @@ public class Frame15_EditProfileStudent extends javax.swing.JFrame {
     private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
         // TODO add your handling code here:
         String userUsing = ManageData.getManageData().getWho_is_using_this_program();
-        //ManageData.getManageData().allStudent.get(userUsing).setLinkOfAvatar(null);
         String oldPath = ManageData.getManageData().allStudent.get(userUsing).getLinkOfAvatar();
 
             ManageData.getManageData().setTemporaryAvatar(null);
-        //Save ...
-        //ManageData.getManageData().saveAllStudent();
+
         
             String linkAvatar = null;
             Image im = Toolkit.getDefaultToolkit().createImage(linkAvatar);
@@ -410,17 +408,7 @@ public class Frame15_EditProfileStudent extends javax.swing.JFrame {
             ImageIcon ii = new ImageIcon(im);
             textFieldImage.setText("");
             textFieldImage.setIcon(ii);
-  
-        //ManageData.getManageData().setTemporaryAvatar(null);
-        //Save ...
-        //ManageData.getManageData().saveAllStudent();
-        
-        /*String linkAvatar = null;
-        Image im = Toolkit.getDefaultToolkit().createImage(linkAvatar);
-        im = im.getScaledInstance(textFieldImage.getWidth(), textFieldImage.getHeight(), Image.SCALE_SMOOTH);
-        ImageIcon ii = new ImageIcon(im);
-        textFieldImage.setText("");
-        textFieldImage.setIcon(ii);*/
+
     }//GEN-LAST:event_btnDeleteActionPerformed
 
     private void btnSaveMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSaveMouseEntered
@@ -481,11 +469,6 @@ public class Frame15_EditProfileStudent extends javax.swing.JFrame {
             catch (Exception e){
                 System.out.println("");
             }
-            //String userUsing = ManageData.getManageData().getWho_is_using_this_program();
-            //ManageData.getManageData().allStudent.get(userUsing).setLinkOfAvatar(path);
-            
-            //Save
-            //ManageData.getManageData().saveAllStudent();
         }
     }//GEN-LAST:event_btnUploadActionPerformed
 

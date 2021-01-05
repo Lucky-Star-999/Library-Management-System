@@ -449,10 +449,7 @@ public class Frame10_ManageStudents_General extends javax.swing.JFrame {
     private void btnLibrary1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLibrary1ActionPerformed
         // TODO add your handling code here:
         String search = textFieldSearch.getText();
-        
-        //Searching.getSearching().translateToSearchStudentByName(search);
-        //Searching.getSearching().translateToSearchStudentById(search);
-        
+
         //New methods
         Searching.getSearching().mergeSearchStudent(search);
         
@@ -461,13 +458,6 @@ public class Frame10_ManageStudents_General extends javax.swing.JFrame {
         
         model.setRowCount(0);
         
-        /*for(Student value: Searching.getSearching().searchStudentByName.values()){
-            model.addRow( new Object[]{ value.getIdStudent(), value.getFullName(), value.getPhone(), value.getUsername(), "No" } );
-        }
-
-        for(Student value: Searching.getSearching().searchStudentById.values()){
-            model.addRow( new Object[]{ value.getIdStudent(), value.getFullName(), value.getPhone(), value.getUsername(), "No" } );
-        }*/
         //---------------------------------------------------------
         ArrayList<String> nameSorted = new ArrayList<String>();
         for(Student value: Searching.getSearching().mergeSearch.values()){

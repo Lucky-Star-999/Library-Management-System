@@ -271,7 +271,6 @@ public class Frame18_ForgotPassword extends javax.swing.JFrame {
 
     private void btnResetPWActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResetPWActionPerformed
         // TODO add your handling code here:
-        //String typeOfUser = ManageData.getManageData().getType_of_user_using_this_program();
         String username = textFieldUsername.getText();
         String mail = textFieldEmail.getText();
         String phone = textFieldPhone.getText();

@@ -524,8 +524,6 @@ public class Frame16_Book_Manager extends javax.swing.JFrame {
         // TODO add your handling code here:
         String search = jTextField_Search.getText();
         
-        //Searching.getSearching().translateToSearchStudentByName(search);
-        //Searching.getSearching().translateToSearchStudentById(search);
         
         //New methods
         Searching.getSearching().mergeSearchBook(search);
@@ -534,16 +532,7 @@ public class Frame16_Book_Manager extends javax.swing.JFrame {
         DefaultTableModel model = (DefaultTableModel)jTable1.getModel();
         
         model.setRowCount(0);
-        
-        /*for(Student value: Searching.getSearching().searchStudentByName.values()){
-            model.addRow( new Object[]{ value.getIdStudent(), value.getFullName(), value.getPhone(), value.getUsername(), "No" } );
-        }
-
-        for(Student value: Searching.getSearching().searchStudentById.values()){
-            model.addRow( new Object[]{ value.getIdStudent(), value.getFullName(), value.getPhone(), value.getUsername(), "No" } );
-        }*/
-        
-        
+            
         for(Book value: Searching.getSearching().searchBookByNameAndId.values()){
             model.addRow( new Object[]{ value.getIdBook(), value.getCategory(), value.getTitle(), value.getAuthor(), value.getAvailable() } );
         }
@@ -622,8 +611,7 @@ public class Frame16_Book_Manager extends javax.swing.JFrame {
 
     private void jComboBox1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jComboBox1MouseClicked
         // TODO add your handling code here:
-        /*String contents = String.valueOf(jComboBox1.getSelectedItem());
-        System.out.println(contents);*/
+
     }//GEN-LAST:event_jComboBox1MouseClicked
 
     private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable1MouseClicked
@@ -660,7 +648,6 @@ public class Frame16_Book_Manager extends javax.swing.JFrame {
         int i = jTable1.getSelectedRow();
         if(i != -1){
             String id = String.valueOf(jTable1.getValueAt(i, 0));
-            //ManageData.getManageData().setBook_choosen(id);
             String link = ManageData.getManageData().allBook.get(id).getLinkPdf();
             File file = new File(link);
             
@@ -670,7 +657,6 @@ public class Frame16_Book_Manager extends javax.swing.JFrame {
             else{
                 ManageData.getManageData().openPdfFile(file.getAbsolutePath());
             }
-            //ManageData.getManageData().openPdfFile(file.getAbsolutePath());
 
         }
     }//GEN-LAST:event_btnAddNewBook2ActionPerformed
@@ -688,7 +674,6 @@ public class Frame16_Book_Manager extends javax.swing.JFrame {
         int i = jTable1.getSelectedRow();
         if(i != -1){
             String id = String.valueOf(jTable1.getValueAt(i, 0));
-            //ManageData.getManageData().setBook_choosen(id);
             String link = ManageData.getManageData().allBook.get(id).getLinkAudio();
             File file = new File(link);
             
@@ -698,7 +683,6 @@ public class Frame16_Book_Manager extends javax.swing.JFrame {
             else{
                 ManageData.getManageData().openPdfFile(file.getAbsolutePath());
             }
-            //ManageData.getManageData().openPdfFile(file.getAbsolutePath());
 
         }
     }//GEN-LAST:event_btnBack3ActionPerformed
