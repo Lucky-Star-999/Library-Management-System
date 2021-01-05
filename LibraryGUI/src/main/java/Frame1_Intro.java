@@ -175,6 +175,7 @@ public class Frame1_Intro extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnManagerMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnManagerMouseEntered
@@ -190,7 +191,9 @@ public class Frame1_Intro extends javax.swing.JFrame {
     }//GEN-LAST:event_btnManagerMouseExited
 
     private void btnManagerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnManagerActionPerformed
-        
+        this.dispose();
+        Frame2_LoginManager frame2 = new Frame2_LoginManager();
+        frame2.setVisible(true);
     }//GEN-LAST:event_btnManagerActionPerformed
 
     private void btnStudentMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnStudentMouseEntered
@@ -207,6 +210,9 @@ public class Frame1_Intro extends javax.swing.JFrame {
 
     private void btnStudentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStudentActionPerformed
         // TODO add your handling code here:
+        this.dispose();
+        Frame3_LoginStudent frame3 = new Frame3_LoginStudent();
+        frame3.setVisible(true);
     }//GEN-LAST:event_btnStudentActionPerformed
 
     /**
