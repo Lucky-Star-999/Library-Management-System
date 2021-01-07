@@ -3,15 +3,7 @@ import java.awt.Color;
 import javax.swing.JOptionPane;
 import java.util.regex.*; 
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-/**
- *
- * @author doquangminh
- */
+
 public class Frame4_RegisterManager extends javax.swing.JFrame {
 
     /**

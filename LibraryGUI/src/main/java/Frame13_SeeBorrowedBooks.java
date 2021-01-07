@@ -10,16 +10,7 @@ import java.awt.Toolkit;
 import java.io.File;
 import javax.swing.ImageIcon;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
-/**
- *
- * @author doquangminh
- */
 public class Frame13_SeeBorrowedBooks extends javax.swing.JFrame {
 
     /**
