@@ -53,6 +53,17 @@ null
 src/main/java/imageBook/005 - Solving the wicked problem - Elina Narvanen et al (Eds.).jpg
 src/main/java/pdfFiles/sample-pdf-file.pdf
 src/main/java/audioFiles/ImperialMarch60.wav
+1234
+qqq
+aaaa
+qqqqq
+null
+null
+Yes
+null
+null
+src/main/java/pdfFiles/
+src/main/java/audioFiles/
 006
 Hyperbole And A Half
 Funny
